@@ -35,3 +35,11 @@ What Can PHP Do?
 7. PHP can encrypt data <br>
 With PHP you are not limited to output HTML. You can output images, PDF files, and even Flash movies. You can also output any text, such as XHTML and XML.
 
+Why PHP?
+---------
+1. PHP runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)
+2. PHP is compatible with almost all servers used today (Apache, IIS, etc.)
+3. PHP supports a wide range of databases
+4. PHP is free. Download it from the official PHP resource: www.php.net
+5. PHP is easy to learn and runs efficiently on the server side
+
