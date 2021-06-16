@@ -48,5 +48,20 @@
     }
     myGloKeyFun();
     echo $y;
+    echo "<br>";
+
+    function staFun(){
+        static $s = 0;
+        echo $s;
+        $s++;
+    }
+    staFun();
+    echo "<br>";
+    staFun();
+    echo "<br>";
+    staFun();
+    echo "<br>";
+    staFun();
+    echo "<br>";
 
 ?>
