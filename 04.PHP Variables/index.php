@@ -46,6 +46,7 @@
     function myGloKeyFun(){
         $GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y'];
     }
+    // static scope
     myGloKeyFun();
     echo $y;
     echo "<br>";
