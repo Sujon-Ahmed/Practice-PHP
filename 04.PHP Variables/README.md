@@ -28,3 +28,9 @@ A variable declared outside a function has a GLOBAL SCOPE and can only be access
 Local Scope
 ------------------
 A variable declared within a function has a LOCAL SCOPE and can only be accessed within that function
+
+PHP the global keyword
+---------------------------
+The global keyword is used to access a global variable from within a function
+To do this, use the global keyword before the variables (inside the function).
+
