@@ -9,10 +9,10 @@
     $greeting = "Hi, ";
     echo $greeting." Sujon Ahmed <br>";
 
-    $x = 10;
-    $y = 20;
-    $sum = $x + $y;
-    echo "The Summation is : ".$sum;
+    // $x = 10;
+    // $y = 20;
+    // $sum = $x + $y;
+    // echo "The Summation is : ".$sum;
 
     $a = 5; // global scope
     function myTest(){
@@ -29,5 +29,14 @@
     myFun();
     // using b outside the function will generate an error
     // echo "<p>Variable b outside function is: $b</p>";
+
+    $x = 5;
+    $y = 10;
+    function gloKeyFun(){
+        global $x, $y;
+        $y = $x + $y;
+    }
+    gloKeyFun();
+    echo $y;
 
 ?>

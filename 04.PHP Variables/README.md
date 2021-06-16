@@ -31,6 +31,7 @@ A variable declared within a function has a LOCAL SCOPE and can only be accessed
 
 PHP the global keyword
 ---------------------------
-The global keyword is used to access a global variable from within a function
+The global keyword is used to access a global variable from within a function.
 To do this, use the global keyword before the variables (inside the function).
+
 
