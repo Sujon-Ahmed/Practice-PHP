@@ -7,5 +7,10 @@
 
     // Output Variables
     $greeting = "Hi, ";
-    echo $greeting." Sujon Ahmed";
+    echo $greeting." Sujon Ahmed <br>";
+
+    $x = 10;
+    $y = 20;
+    $sum = $x + $y;
+    echo "The Summation is : ".$sum;
 ?>

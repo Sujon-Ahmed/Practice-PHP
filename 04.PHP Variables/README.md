@@ -10,3 +10,13 @@ Rules for PHP variables:
 5. Variable names are case-sensitive ($age and $AGE are two different variables)
 
 Note : Remember that PHP variable names are case-sensitive!
+
+PHP Variables Scope
+--------------------
+In PHP, variables can be declared anywhere in the script.
+The scope of a variable is the part of the script where the variable can be referenced/used.
+PHP has three different variable scopes:
+
+1. local
+2. global
+3. static
