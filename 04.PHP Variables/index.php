@@ -39,4 +39,14 @@
     gloKeyFun();
     echo $y;
 
+    echo "<br>";
+    // different method
+    $x = 5;
+    $y = 10;
+    function myGloKeyFun(){
+        $GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y'];
+    }
+    myGloKeyFun();
+    echo $y;
+
 ?>
