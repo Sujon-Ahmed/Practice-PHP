@@ -14,5 +14,11 @@
     $sum = $x + $y;
     echo "The Summation is : ".$sum;
 
-    
+    $a = 5; // global scope
+    function myTest(){
+        //using a inside this function will generate an error
+       // echo "<p>Variable a inside function is: $a</p>";
+    }
+    myTest();
+    echo "<p>Variable a outside function is: $a</p>";
 ?>
