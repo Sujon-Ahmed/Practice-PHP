@@ -1,3 +1,3 @@
 <?php
-    echo "This is my first project in PHP";
+    echo "My first PHP Script";
 ?>
