@@ -46,18 +46,16 @@
     function myGloKeyFun(){
         $GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y'];
     }
-    // static scope
     myGloKeyFun();
     echo $y;
     echo "<br>";
 
+    // static scope
     function staFun(){
         static $s = 0;
         echo $s;
         $s++;
     }
-    staFun();
-    echo "<br>";
     staFun();
     echo "<br>";
     staFun();
