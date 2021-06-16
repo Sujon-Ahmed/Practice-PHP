@@ -21,4 +21,13 @@
     }
     myTest();
     echo "<p>Variable a outside function is: $a</p>";
+
+    function myFun(){
+        $b = 10; // local scope
+        echo "<p>Variable b inside function is: $b</p>";
+    }
+    myFun();
+    // using b outside the function will generate an error
+    // echo "<p>Variable b outside function is: $b</p>";
+
 ?>
