@@ -1,3 +1,5 @@
 <?php
-    // This is PHP Syntax now i comments this txt
+    // PHP code goes here
+
+    echo "Hello World!";
 ?>
