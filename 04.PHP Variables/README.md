@@ -20,3 +20,11 @@ PHP has three different variable scopes:
 1. local
 2. global
 3. static
+
+Global Scope
+--------------
+A variable declared outside a function has a GLOBAL SCOPE and can only be accessed outside a function
+
+Local Scope
+------------------
+A variable declared within a function has a LOCAL SCOPE and can only be accessed within that function
