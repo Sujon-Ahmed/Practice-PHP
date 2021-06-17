@@ -11,3 +11,7 @@ PHP supports the following data types:
 7. NULL
 8. Resource
 
+PHP String
+----------------
+A string is a sequence of characters, like "Hello world!".
+A string can be any text inside quotes. You can use single or double quotes
