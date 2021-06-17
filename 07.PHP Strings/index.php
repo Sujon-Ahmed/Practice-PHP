@@ -43,26 +43,26 @@
 
     // echo ucfirst($string);
 
-    //echo ucwords($string);
+    // echo ucwords($string);
 
-    $name = 'sujon';
+    //$name = 'sujon';
 
     //existing variable check
-    if(isset($name)){
-        echo 'set';
-    }else{
-        echo 'unset';
-    }
+    // if(isset($name)){
+    //     echo 'set';
+    // }else{
+    //     echo 'unset';
+    // }
 
     //existing value fill or not
 
-    if(empty($name)){
-        echo 'unset';
-    }else{
-        echo 'set';
-    }
+    // if(empty($name)){
+    //     echo 'unset';
+    // }else{
+    //     echo 'set';
+    // }
 
-    echo $name;
+    // echo $name;
 
 
 ?>
