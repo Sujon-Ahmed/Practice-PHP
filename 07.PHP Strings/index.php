@@ -64,5 +64,18 @@
 
     // echo $name;
 
+    $txt = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam voluptas a cumque. Vero hic, est enim tenetur fugiat, porro sit omnis facere cumque odit vitae.";
+    
+    $strcut = substr($txt,0,50);
+    echo $strcut.'<a href="#"> Read More...</a>';
+    
+    // PHP Implode function
+    $arr = ['Sujon ', 'Ahmed ', 'Riman '];
+    $name = implode('+',$arr);
+    echo $name;
+
+ 
+
 
 ?>
+
