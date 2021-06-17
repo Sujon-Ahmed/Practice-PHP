@@ -20,9 +20,12 @@
        // PHP Integer
        $num = 923364;
        echo "My Roll NO : ".$num."<br>";
-       echo var_dump($num);
+       echo var_dump($num)."<br>";
 
        // PHP Float
+       $exResult = 4.96;
+       echo "My SSC GPA Result Score : ".$exResult."<br>";
+       echo var_dump($exResult);
 
      
 
