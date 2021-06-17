@@ -68,11 +68,20 @@
     
     $strcut = substr($txt,0,50);
     echo $strcut.'<a href="#"> Read More...</a>';
+    echo "<br>";
     
     // PHP Implode function
     $arr = ['Sujon ', 'Ahmed ', 'Riman '];
     $name = implode('+',$arr);
     echo $name;
+
+    echo "<br>";
+
+    // is_array function
+
+    $city = ['Dhaka ', 'Chittagong ', 'Rajshahi ', 'Khulna ', 'Barishal', 'Sylet'];
+    $checker = is_array($city);
+    echo var_dump($checker);
 
  
 
