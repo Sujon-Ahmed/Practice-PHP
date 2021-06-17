@@ -24,6 +24,6 @@
     $name = ['Sujon', 'Riman', 'Alamin', 'Toukir'];
     echo "<pre>";
     print_r($name);
-    echo "</pre>"
+    echo "</pre>";
 
 ?>
