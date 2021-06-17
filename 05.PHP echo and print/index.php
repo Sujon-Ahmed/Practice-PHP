@@ -14,10 +14,16 @@
     $subject = "PHP ";
     $learn = "Programming ";
     echo "I'm learning $subject $learn language step by step <br>";
-    
+
     // Calculation
     $x = 10;
     $y = 20;
     print $x += $y;
+
+    // print_r Statements
+    $name = ['Sujon', 'Riman', 'Alamin', 'Toukir'];
+    echo "<pre>";
+    print_r($name);
+    echo "</pre>"
 
 ?>
