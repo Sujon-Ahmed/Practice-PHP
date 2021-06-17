@@ -17,6 +17,10 @@
       // var_dump() function check data-type
       echo var_dump($x)."<br>";
 
+       // PHP Integer
+       $num = 923364;
+       echo var_dump($num);
+
      
 
   
