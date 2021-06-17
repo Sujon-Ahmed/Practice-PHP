@@ -32,6 +32,13 @@
        $y = false; */
        // PHP Boolean two statements true and false
 
+       // PHP Array
+       $arr = ['Sujon', 'Riman', 'Alamin', 'Toukir'];
+       echo "<pre>";
+       var_dump($arr);
+       echo "</pre>";
+       
+
      
 
   
