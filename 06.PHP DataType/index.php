@@ -14,6 +14,11 @@
     $y = "World";
     echo $x.$y."<br>";
 
+      // var_dump() function check data-type
+      echo var_dump($x)."<br>";
+
+     
+
   
   
 
