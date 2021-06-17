@@ -37,7 +37,19 @@
        echo "<pre>";
        var_dump($arr);
        echo "</pre>";
+       echo "<br>";
+
+       // PHP NULL
+
+       $a = '';
+       $b = 10;
        
+       if($a == NULL){
+           echo "empty";
+       }else{
+           echo "fill";
+       }
+
 
      
 
