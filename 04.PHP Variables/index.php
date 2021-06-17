@@ -6,31 +6,31 @@
     */
 
     // Output Variables
-    $greeting = "Hi, ";
-    echo $greeting." Sujon Ahmed <br>";
+   /*  $greeting = "Hi, ";
+    echo $greeting." Sujon Ahmed <br>"; */
 
-    // $x = 10;
-    // $y = 20;
-    // $sum = $x + $y;
-    // echo "The Summation is : ".$sum;
+   /*  $x = 10;
+    $y = 20;
+    $sum = $x + $y;
+    echo "The Summation is : ".$sum; */
 
-    $a = 5; // global scope
+   /*  $a = 5; // global scope
     function myTest(){
         //using a inside this function will generate an error
        // echo "<p>Variable a inside function is: $a</p>";
     }
     myTest();
-    echo "<p>Variable a outside function is: $a</p>";
+    echo "<p>Variable a outside function is: $a</p>"; */
 
-    function myFun(){
+   /*  function myFun(){
         $b = 10; // local scope
         echo "<p>Variable b inside function is: $b</p>";
     }
     myFun();
     // using b outside the function will generate an error
-    // echo "<p>Variable b outside function is: $b</p>";
+    // echo "<p>Variable b outside function is: $b</p>"; */
 
-    $x = 5;
+    /* $x = 5;
     $y = 10;
     function gloKeyFun(){
         global $x, $y;
@@ -39,19 +39,19 @@
     gloKeyFun();
     echo $y;
 
-    echo "<br>";
+    echo "<br>"; */
     // different method
-    $x = 5;
+   /*  $x = 5;
     $y = 10;
     function myGloKeyFun(){
         $GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y'];
     }
     myGloKeyFun();
     echo $y;
-    echo "<br>";
+    echo "<br>"; */
 
     // static scope
-    function staFun(){
+    /* function staFun(){
         static $s = 0;
         echo $s;
         $s++;
@@ -61,6 +61,10 @@
     staFun();
     echo "<br>";
     staFun();
-    echo "<br>";
+    echo "<br>"; */
+
+    
+
+
 
 ?>
