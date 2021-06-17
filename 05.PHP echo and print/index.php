@@ -9,5 +9,15 @@
     echo "My name is ".$txt1.$txt2;
 
     // PHP print Statements
+    print "<h2>PHP is Fun!</h2><br>";
+    print "hello World <br>";
+    $subject = "PHP ";
+    $learn = "Programming ";
+    echo "I'm learning $subject $learn language step by step <br>";
+    
+    // Calculation
+    $x = 10;
+    $y = 20;
+    print $x += $y;
 
 ?>
