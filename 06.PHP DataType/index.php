@@ -27,6 +27,11 @@
        echo "My SSC GPA Result Score : ".$exResult."<br>";
        echo var_dump($exResult);
 
+       // PHP Boolean
+       /* $x = true;
+       $y = false; */
+       // PHP Boolean two statements true and false
+
      
 
   
