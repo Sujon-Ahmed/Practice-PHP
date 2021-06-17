@@ -82,6 +82,16 @@
     $city = ['Dhaka ', 'Chittagong ', 'Rajshahi ', 'Khulna ', 'Barishal', 'Sylet'];
     $checker = is_array($city);
     echo var_dump($checker);
+    echo "<br>";
+
+    $text = "hello there";
+    $check = is_array($text);
+    echo var_dump($check);
+    echo "<br>";
+
+    // array value count
+    $array = ['1 ', '2 ', '3 ', '4 ', '5 '];
+    echo count($array);
 
  
 
