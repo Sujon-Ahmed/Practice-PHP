@@ -19,6 +19,7 @@
 
        // PHP Integer
        $num = 923364;
+       echo "My Roll NO : ".$num."<br>";
        echo var_dump($num);
 
      
