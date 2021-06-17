@@ -92,9 +92,17 @@
     // array value count
     $array = ['1 ', '2 ', '3 ', '4 ', '5 '];
     echo count($array);
+    echo "<br>";
 
- 
+    // multidimensional array count
+    $countries = array(
+        "Asia" => array('Bangladesh', 'India', 'Pakistan'),
+        "Europe" => array('England', 'France'),
+        "Africa" => array('Kenya', 'Libya', 'Somalia'),
+    );
+    echo count($countries, COUNT_RECURSIVE);
 
+    // if we are not COUNT_RECURSIVE then sub-array isn't count and we can see output 3
 
 ?>
 
