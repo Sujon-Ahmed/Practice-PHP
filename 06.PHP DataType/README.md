@@ -33,3 +33,8 @@ In the following example $x is a float. The PHP var_dump() function returns the 
 PHP Boolean
 ----------------
 A Boolean represents two possible states: TRUE or FALSE.
+
+PHP Array
+--------------
+An array stores multiple values in one single variable.
+In the following example $arr is an array. The PHP var_dump() function returns the data type and value:
