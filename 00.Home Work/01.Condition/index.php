@@ -63,7 +63,7 @@
         echo "Error!";
     } */
 
-    // Switch case 12 Month
+    /* // Switch case 12 Month
     $month = 2;
 	switch ($month) {
 		case 1:
@@ -106,7 +106,29 @@
 		default:
 			echo "There are no month.";
 			break;
-	}
+	} */
+
+    // Exam Sit plan program
+    $classCom1 = "Com1";
+    $classCom2 = "Com2";
+    $Roll = 923364;
+
+    if($Roll >=923341 && $Roll <= 923370){
+        echo "Faridpur Polytechnic Institute <br>";
+        echo "Your Board Roll Number : ".$Roll."<br>";
+        echo "Exam Date : <br>";
+        echo "Exam Time : <br>";
+        echo "Room Number : ".$classCom1."<br>";
+    }
+    elseif($Roll >= 923275 && $Roll <= 923340){
+        echo "Faridpur Polytechnic Institute <br>";
+        echo "Your Board Roll Number : ".$Roll."<br>";
+        echo "Exam Date : <br>";
+        echo "Exam Time : <br>";
+        echo "Room Number : ".$classCom2."<br>";
+    }else{
+        echo "Not Found";
+    }
 
     
 
