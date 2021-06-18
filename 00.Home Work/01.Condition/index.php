@@ -63,6 +63,51 @@
         echo "Error!";
     } */
 
+    // Switch case 12 Month
+    $month = 2;
+	switch ($month) {
+		case 1:
+			echo "January month have 31 days.";
+			break;
+		case 2:
+			echo "February month have 28 days.";
+			break;
+		case 3:
+			echo "March month have 31 days.";
+			break;
+		case 4:
+			echo "April month have 30 days.";
+			break;
+		case 5:
+			echo "May month have 31 days.";
+			break;
+		case 6:
+			echo "June month have 30 days.";
+			break;
+		case 7:
+			echo "July month have 31 days.";
+			break;
+		case 8:
+			echo "August month have 31 days.";
+			break;
+		case 9:
+			echo "September month have 30 days";
+			break;
+		case 10:
+			echo "October month have 31 days.";
+			break;
+		case 11:
+			echo "November month have 30 days.";
+			break;
+		case 12:
+			echo "December month have 31 days.";
+			break;
+		
+		default:
+			echo "There are no month.";
+			break;
+	}
+
     
 
     // Login form with message
