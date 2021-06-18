@@ -130,15 +130,44 @@
         echo "Not Found";
     } */
 
-    // Leap year check
+   /*  // Leap year check
     $year = 2019;
     if($year%4 == 0){
         echo "This is leap year";
     }else{
         echo "This is not leap year";
+    } */
+
+    // Switch case Seven days program
+    $day = date("D");
+    switch ($day) {
+        case "Sun":
+           echo "Today is Sunday";
+            break;
+        case "Mon":
+            echo "Today is Monday";
+            break;
+        case "Tue":
+            echo "Today is Tuesday";
+            break;
+        case "Wed":
+            echo "Today is Wednesday";
+            break;
+        case "Thu":
+            echo "Today is Thursday";
+            break;
+        case "Fri":
+            echo "Today is Friday";
+            break;
+        case "Sat":
+            echo "Today is Saturday";
+            break;
+        
+        default:
+            echo "This is not day";
+            break;
     }
 
-    
 
     // Login form with message
    /*  $User=$_POST['userName'];
