@@ -13,7 +13,8 @@
     //echo(abs(-3.1415926535898));
 
     // PHP sqrt() function
+    echo (sqrt(64));
 
-    
+
 
 ?>
