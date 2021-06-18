@@ -19,4 +19,11 @@
     // $x = 456;
     // echo var_dump(is_numeric($x));
 
+    // PHP Casting
+    // $x = '122.456';
+    // $int_cast = (int)$x;
+    // echo $int_cast;
+
+
+
 ?>
