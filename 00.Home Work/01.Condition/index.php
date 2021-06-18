@@ -33,6 +33,36 @@
         echo " Negative !";
     } */
 
+    // Exam Result check program
+    $number = 95;
+    if ($number>100){
+        echo "Error!";
+    }
+    elseif ($number>=80) {
+        echo "You got 'A+'";	
+    }
+    elseif ($number>=70) {
+        echo "You got 'A'";
+    }
+    elseif ($number>=60) {
+        echo "You got 'A-'";
+    }
+    elseif ($number>=50) {
+        echo "You got 'B'";
+    }
+    elseif ($number>=40) {
+        echo "You got 'C'";
+    }
+    elseif ($number>=33) {
+        echo "You got 'D'";
+    }
+    elseif ($number>=0) {
+        echo "You're Fail";
+    }
+        else{
+        echo "Error!";
+    }
+
     // Login form with message
    /*  $User=$_POST['userName'];
     $Pass=$_POST['passWord'];
