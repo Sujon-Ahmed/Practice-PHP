@@ -11,4 +11,6 @@
     $x = 1.9e411;
     echo var_dump($x);
 
+    // PHP NaN
+
 ?>
