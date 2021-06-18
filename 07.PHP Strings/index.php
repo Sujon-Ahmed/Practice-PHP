@@ -103,6 +103,12 @@
     echo count($countries, COUNT_RECURSIVE);
 
     // if we are not COUNT_RECURSIVE then sub-array isn't count and we can see output 3
+    
+    echo "<br>";
+    $word = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_^$@";
+	$suf = str_shuffle($word);
+	echo substr($suf, 0,8);
+	echo "<br>";
 
 ?>
 

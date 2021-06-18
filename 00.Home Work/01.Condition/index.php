@@ -33,7 +33,7 @@
         echo " Negative !";
     } */
 
-    // Exam Result check program
+    /* // Exam Result check program
     $number = 95;
     if ($number>100){
         echo "Error!";
@@ -61,7 +61,9 @@
     }
         else{
         echo "Error!";
-    }
+    } */
+
+    
 
     // Login form with message
    /*  $User=$_POST['userName'];
