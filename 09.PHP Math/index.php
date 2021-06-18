@@ -10,6 +10,10 @@
     // echo max(45,158,4,155,123,45,45);
 
     // PHP abs() function
+    //echo(abs(-3.1415926535898));
 
+    // PHP sqrt() function
+
+    
 
 ?>
