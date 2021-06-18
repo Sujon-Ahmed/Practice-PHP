@@ -108,6 +108,54 @@
 			break;
 	} */
 
+     /* // Month 
+     $month = date("M");
+     $year = 2021;
+ 
+     if ($month == "Jan") {
+         echo "There are 31 days in the month of January.";
+     }
+     elseif ($month == "Feb") {
+         if ($year%4 == 0) {
+             echo "This is leap year";
+         }
+         else{
+             echo "This is not leap year";
+         }
+         echo "Then the month of February will be 29 days <br> Otherwise February month 28 days.";
+     }
+     elseif ($month == "Mar") {
+         echo "There are 31 days in the month of March.";;
+     }
+     elseif ($month == "Apr") {
+         echo "There are 30 days in the month of April.";
+     }
+     elseif ($month == "May") {
+         echo "There are 31 days in the month of May.";
+     }
+     elseif ($month == "Jun") {
+         echo "There are 30 days in the month of June.";
+     }
+     elseif ($month == "Jul") {
+         echo "There are 31 days in the month of July.";
+     }
+     elseif ($month == "Aug") {
+         echo "There are 31 days in the month of August.";
+     }
+     elseif ($month == "Sep") {
+         echo "There are 30 days in the month of September.";
+     }
+     elseif ($month == "Oct") {
+         echo "There are 31 days in the month of October.";
+     }
+     elseif ($month == "Nov") {
+         echo "There are 30 days in the month of November.";
+     }
+     else{
+         echo "There are 31 days in the month of December.";
+     } */
+     
+
    /*  // Exam Sit plan program 
     $classCom1 = "Com1";
     $classCom2 = "Com2";
@@ -138,7 +186,7 @@
         echo "This is not leap year";
     } */
 
-    // Switch case Seven days program
+    /* // Switch case Seven days program
     $day = date("D");
     switch ($day) {
         case "Sun":
@@ -166,8 +214,7 @@
         default:
             echo "This is not day";
             break;
-    }
-
+    } */
 
     // Login form with message
    /*  $User=$_POST['userName'];
