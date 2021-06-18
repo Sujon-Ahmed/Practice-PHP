@@ -108,7 +108,7 @@
 			break;
 	} */
 
-    // Exam Sit plan program 
+   /*  // Exam Sit plan program 
     $classCom1 = "Com1";
     $classCom2 = "Com2";
     $Roll = 923364;
@@ -128,6 +128,14 @@
         echo "Room Number : ".$classCom2."<br>";
     }else{
         echo "Not Found";
+    } */
+
+    // Leap year check
+    $year = 2019;
+    if($year%4 == 0){
+        echo "This is leap year";
+    }else{
+        echo "This is not leap year";
     }
 
     
