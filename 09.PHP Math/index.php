@@ -13,7 +13,10 @@
     //echo(abs(-3.1415926535898));
 
     // PHP sqrt() function
-    echo (sqrt(64));
+    // echo (sqrt(64));
+
+    // PHP round() function
+    echo(round(9.3555,3));
 
 
 
