@@ -19,11 +19,17 @@
         echo "Its dangerous";
     } */
 
-    // Program : 02 - Even and Odd number checker
-    $num = 3;
+    // Program : 02 - Even and Odd number checker with Positive, Negative Check
+    $num = -2;
     if($num%2 == 0){
-        echo "$num is Even number<br>";
+        echo "$num is Even number and, ";
     }else{
-        echo "$num is Odd number<br>";
+        echo "$num is Odd number and, ";
+    }
+    if($num > 0){
+        echo " Positive !";
+    }
+    else{
+        echo " Negative !";
     }
 ?> 	
