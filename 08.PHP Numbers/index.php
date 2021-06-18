@@ -8,9 +8,11 @@
     // echo var_dump(is_float($num));
 
     // PHP Infinity
-    $x = 1.9e411;
-    echo var_dump($x);
+    // $x = 1.9e411;
+    // echo var_dump($x);
 
     // PHP NaN
+    $x = acos(8);
+    echo var_dump($x);
 
 ?>
