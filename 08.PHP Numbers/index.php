@@ -12,7 +12,11 @@
     // echo var_dump($x);
 
     // PHP NaN
-    $x = acos(8);
-    echo var_dump($x);
+    // $x = acos(8);
+    // echo var_dump($x);
+
+    // PHP Numerical Strings
+    // $x = 456;
+    // echo var_dump(is_numeric($x));
 
 ?>
