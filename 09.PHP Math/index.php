@@ -19,7 +19,14 @@
     //echo(round(9.3555,3));
 
     // PHP random numbers
-    echo (rand(1,10));
+    // echo (rand(1,10));
+
+    // floor function
+    //$math = 66.90;
+    //echo floor($math); // this function value down
+    // ceil function
+    //$math = 66.90;
+    //echo ceil($math); // this function value up
 
 
 
