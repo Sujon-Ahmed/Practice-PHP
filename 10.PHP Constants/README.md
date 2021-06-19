@@ -37,3 +37,13 @@ In PHP7, you can create an Array constant using the define() function.
 
 define("GREETING",['HI','Hello','Hola']);
 echo GREETING[1];
+
+Constants are Global
+-------------------------
+Constants are automatically global and can be used across the entire script.
+
+define("GREETING","Hi There!");
+function myFun(){
+    echo GREETING;
+}
+myFun();
