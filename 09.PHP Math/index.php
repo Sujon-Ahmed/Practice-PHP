@@ -18,7 +18,8 @@
     // PHP round() function
     //echo(round(9.3555,3));
 
-    
+    // PHP random numbers
+    echo (rand(1,10));
 
 
 
