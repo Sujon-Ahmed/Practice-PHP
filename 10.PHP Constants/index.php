@@ -7,5 +7,9 @@
     //define("Greeting", "Hello There!",true);
     //echo greeting;
 
+    // PHP constants array
+    //define("cars",['BMW','TOYOTA','Rose-Royal','Ferrari']);
+    //echo cars[1];
+
 
 ?>
