@@ -11,5 +11,12 @@
     //define("cars",['BMW','TOYOTA','Rose-Royal','Ferrari']);
     //echo cars[1];
 
+    // Constants are global
+    define("GREETING", "Welcome to our universe",true);
+    function myFun(){
+        echo GREETING;
+    }
+    myFun();
+
 
 ?>
