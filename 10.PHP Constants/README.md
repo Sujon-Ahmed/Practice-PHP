@@ -24,5 +24,5 @@ Parameters:
 
 <h3>Create a constant with a case-sensitive name:</h3>
 
-define("GREETING", "Welcome to W3Schools.com!");
+define("GREETING", "Welcome to W3Schools.com!");<br>
 echo GREETING;
