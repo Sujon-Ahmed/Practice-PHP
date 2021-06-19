@@ -10,3 +10,6 @@ A valid constant name starts with a letter or underscore (no $ sign before the c
 
 Create a PHP Constant
 --------------------------
+To create a constant, use the define() function.
+
+<h4>Syntax</h4>
