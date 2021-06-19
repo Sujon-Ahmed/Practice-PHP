@@ -14,3 +14,8 @@ To create a constant, use the define() function.
 
 <h4>Syntax</h4>
 <b>define(name, value, case-insensitive)</b>
+
+Parameters:
+1. name: Specifies the name of the constant
+2. value: Specifies the value of the constant
+3. case-insensitive: Specifies whether the constant name should be case-insensitive. Default is false
