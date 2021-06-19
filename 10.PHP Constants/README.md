@@ -21,3 +21,9 @@ Parameters:
 1. name: Specifies the name of the constant
 2. value: Specifies the value of the constant
 3. case-insensitive: Specifies whether the constant name should be case-insensitive. Default is false
+
+<h3>Create a constant with a case-sensitive name:</h3>
+<?php
+define("GREETING", "Welcome to W3Schools.com!");
+echo GREETING;
+?>
