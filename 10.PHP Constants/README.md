@@ -31,3 +31,12 @@ echo GREETING;
 define("GREETING", "Welcome to W3Schools.com!",true);
 echo GREETING;
 
+PHP Constant Arrays
+--------------------
+In PHP7, you can create an Array constant using the define() function.
+
+define("GREETING","Welcome There!");
+function myFun(){
+    echo GREETING;
+}
+myFun();
