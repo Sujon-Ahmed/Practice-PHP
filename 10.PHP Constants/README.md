@@ -24,7 +24,5 @@ Parameters:
 
 <h3>Create a constant with a case-sensitive name:</h3>
 
-// <?php
 define("GREETING", "Welcome to W3Schools.com!");
 echo GREETING;
-?> //
