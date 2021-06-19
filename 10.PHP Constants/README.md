@@ -35,8 +35,5 @@ PHP Constant Arrays
 --------------------
 In PHP7, you can create an Array constant using the define() function.
 
-define("GREETING","Welcome There!");
-function myFun(){
-    echo GREETING;
-}
-myFun();
+define("GREETING",['HI','Hello','Hola']);
+echo GREETING[1];
