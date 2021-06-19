@@ -17,6 +17,4 @@
         echo GREETING;
     }
     myFun();
-
-
 ?>

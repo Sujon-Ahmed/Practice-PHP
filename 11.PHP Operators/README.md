@@ -26,3 +26,8 @@ Assignment
 x = y   ,             
 x = x + y     ,  
 same-as       x = y,    x +=y
+
+PHP Comparison Operators
+---------------------------
+The PHP comparison operators are used to compare two values (number or string):
+
