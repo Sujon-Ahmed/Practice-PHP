@@ -50,4 +50,12 @@
     // same-as decrement
 
 
+    // PHP Logical Operators
+    // $fName = 'Hello';
+    // $lName = 'World';
+    // if($fName == 'Hello' && $lName == 'World'){
+    //     echo 'Hello World';
+    // }
+
+
 ?>
