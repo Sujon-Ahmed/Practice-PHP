@@ -70,6 +70,16 @@
     // $b = array('c' => 'Alamin', 'd' => 'Toukir');
     // print_r($a + $b);
 
+    // PHP Conditional Assignment Operators
+     // if empty($userName) = TRUE, set $status = "anonymous"
+     echo $status = (empty($userName)) ? "Anonymous" : "Logged In";
+     echo "<br>";
+     // if empty($userName) = FALSE, set $status = "logged in"
+     $userName = "Sujon Ahmed";
+     echo $status = (empty($userName)) ? "Anonymous" : "Logged In";
+     
+     
+
 
 
 
