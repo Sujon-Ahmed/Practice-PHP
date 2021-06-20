@@ -45,3 +45,7 @@ PHP String Operators
 ---------------------
 PHP has two operators that are specially designed for strings.
 
+PHP Array Operators
+-----------------------
+The PHP array operators are used to compare arrays.
+
