@@ -41,3 +41,7 @@ PHP Logical Operators
 -----------------------
 The PHP logical operators are used to combine conditional statements.
 
+PHP String Operators
+---------------------
+PHP has two operators that are specially designed for strings.
+
