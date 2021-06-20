@@ -20,3 +20,16 @@ if (condition) {
 }
 </pre>
 
+
+PHP - The if...else Statement
+----------------------------------
+The if...else statement executes some code if a condition is true and another code if that condition is false.
+
+<h3>Syntax</h3>
+<pre>
+if (condition) {
+  code to be executed if condition is true;
+} else {
+  code to be executed if condition is false;
+}
+</pre>
