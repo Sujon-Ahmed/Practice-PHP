@@ -31,3 +31,9 @@ PHP Comparison Operators
 ---------------------------
 The PHP comparison operators are used to compare two values (number or string):
 
+PHP Increment / Decrement Operators
+-----------------------------------------
+The PHP increment operators are used to increment a variable's value.
+
+The PHP decrement operators are used to decrement a variable's value.
+
