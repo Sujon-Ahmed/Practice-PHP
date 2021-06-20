@@ -49,3 +49,7 @@ PHP Array Operators
 -----------------------
 The PHP array operators are used to compare arrays.
 
+PHP Conditional Assignment Operators
+-----------------------------------------
+The PHP conditional assignment operators are used to set a value depending on conditions:
+
