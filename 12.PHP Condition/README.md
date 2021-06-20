@@ -9,3 +9,12 @@ In PHP we have the following conditional statements:
 03. if...elseif...else statement - executes different codes for more than two conditions
 04. switch statement - selects one of many blocks of code to be executed
 
+PHP - The if Statement
+-----------------------
+The if statement executes some code if one condition is true.
+
+<h3>Syntax</h3>
+if (condition) {
+  code to be executed if condition is true;
+}
+
