@@ -14,7 +14,9 @@ PHP - The if Statement
 The if statement executes some code if one condition is true.
 
 <h3>Syntax</h3>
+<pre>
 if (condition) {
   code to be executed if condition is true;
 }
+</pre>
 
