@@ -20,4 +20,4 @@ switch (n) {
 }
 </pre>
 
-This is how it works: First we have a single expression n (most often a variable), that is evaluated once. The value of the expression is then compared with the values for each case in the structure. If there is a match, the block of code associated with that case is executed. Use <strong>break</strong> to prevent the code from running into the next case automatically. The <strong>default</strong> statement is used if no match is found.
+This is how it works: First we have a single expression n (most often a variable), that is evaluated once. The value of the expression is then compared with the values for each case in the structure. If there is a match, the block of code associated with that case is executed. Use <strong style="color:tomato">break</strong> to prevent the code from running into the next case automatically. The <strong style="color:tomato">default</strong> statement is used if no match is found.
