@@ -63,8 +63,12 @@
     // echo $x.$y; // concatenation
     // $x .=$y;    // concatenation assignment
     // echo $x;
-
     
+
+    // PHP Array Operators
+    // $a = array('a' => 'Sujon', 'b' => 'Riman');
+    // $b = array('c' => 'Alamin', 'd' => 'Toukir');
+    // print_r($a + $b);
 
 
 
