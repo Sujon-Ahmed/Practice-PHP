@@ -37,5 +37,7 @@ The PHP increment operators are used to increment a variable's value.
 
 The PHP decrement operators are used to decrement a variable's value.
 
-
+PHP Logical Operators
+-----------------------
+The PHP logical operators are used to combine conditional statements.
 
