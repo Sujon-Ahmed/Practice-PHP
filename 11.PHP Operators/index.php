@@ -57,5 +57,16 @@
     //     echo 'Hello World';
     // }
 
+    // PHP String Operators
+    // $x = 'Hello ';
+    // $y = 'World';
+    // echo $x.$y; // concatenation
+    // $x .=$y;    // concatenation assignment
+    // echo $x;
+
+    
+
+
+
 
 ?>
