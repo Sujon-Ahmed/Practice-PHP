@@ -15,10 +15,15 @@
     // echo "<br>";
 
     // Assignment Operators
+    // $x = 10;
+    // $y = 20;
+    // $x +=$y;
+    // echo $x;
+
+    // Comparison Operators
     $x = 10;
-    $y = 20;
-    $x +=$y;
-    echo $x;
+    $y = 10;
+    echo var_dump($x == $y);
 
 
 ?>
