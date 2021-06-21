@@ -49,3 +49,4 @@ Parameters:
     ✔ init counter: Initialize the loop counter value
     ✔ test counter: Evaluated for each loop iteration. If it evaluates to TRUE, the loop continues. If it evaluates to FALSE, the loop ends.
     ✔ increment counter: Increases the loop counter value
+    
