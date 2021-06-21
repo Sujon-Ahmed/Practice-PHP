@@ -143,6 +143,15 @@
     //     echo $val.'<br>';
     // }
 
+    // foreach loop with associative array
+    $cars = array(1 => 'Volvo', 2 => 'Ferrari', 3 => 'BMW');
+    echo"<pre>";
+        print_r(array_reverse($cars));
+    echo"</pre>";
+    foreach($cars as $key => $val){
+       echo "$key : $val <br>";
+    }
+
     
 
 
