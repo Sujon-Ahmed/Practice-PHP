@@ -10,3 +10,15 @@ In PHP, we have the following loop types:
     2. do...while - loops through a block of code once, and then repeats the loop as long as the specified condition is true
     3. for - loops through a block of code a specified number of times
     4. foreach - loops through a block of code for each element in an array
+
+The PHP While Loop
+-------------------
+The while loop executes a block of code as long as the specified condition is true.
+
+<h3>Syntax</h3>
+<pre>
+    while (condition is true) {
+    code to be executed;
+    }
+</pre>
+
