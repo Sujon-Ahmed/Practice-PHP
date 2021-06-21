@@ -28,10 +28,23 @@
     // }
 
     // do...while loop
-    $number = 12;
-    do{
-        echo "The number is $number <br>";
-        $number++;
-    }while($number <= 10);
+    // $number = 12;
+    // do{
+    //     echo "The number is $number <br>";
+    //     $number++;
+    // }while($number <= 10);
+
+    // for loop
+
+    // print 10 time hello
+    // for ($i=0; $i <= 10 ; $i++) { 
+    //    echo 'Hello <br>';
+    // }
+
+    // print 100 to 1
+    // for ($i=100; $i >= 1 ; $i--) { 
+    //     echo $i.'<br>';
+    // }
+
 
 ?>

@@ -32,3 +32,20 @@ The do...while loop will always execute the block of code once, it will then che
     code to be executed;
     } while (condition is true);
 </pre>
+
+The PHP for Loop
+---------------------
+The for loop is used when you know in advance how many times the script should run.
+
+<h3>Syntax</h3>
+<pre>
+    for (init counter; test counter; increment counter) {
+    code to be executed for each iteration;
+    }
+</pre>
+
+Parameters:
+
+    init counter: Initialize the loop counter value
+    test counter: Evaluated for each loop iteration. If it evaluates to TRUE, the loop continues. If it evaluates to FALSE, the loop ends.
+    increment counter: Increases the loop counter value
