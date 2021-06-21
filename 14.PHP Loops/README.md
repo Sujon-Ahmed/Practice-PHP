@@ -22,3 +22,13 @@ The while loop executes a block of code as long as the specified condition is tr
     }
 </pre>
 
+The PHP do...while Loop
+---------------------------
+The do...while loop will always execute the block of code once, it will then check the condition, and repeat the loop while the specified condition is true.
+
+<h3>Syntax</h3>
+<pre>
+    do {
+    code to be executed;
+    } while (condition is true);
+</pre>

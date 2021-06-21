@@ -21,10 +21,12 @@
 //    }
 
     // print 0 to 100 number and always print step 10 
-    $number = 0;
-    while($number <= 100){
-        echo "The number is $number <br>";
-        $number+=10;
-    }
+    // $number = 0;
+    // while($number <= 100){
+    //     echo "The number is $number <br>";
+    //     $number+=10;
+    // }
+
+    
 
 ?>
