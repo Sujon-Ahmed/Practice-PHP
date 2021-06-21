@@ -137,6 +137,12 @@
     //     echo '<br>';
     // }
 
+    // foreach loop with indexed array
+    // $colors = array('red', 'green', 'orange', 'blue');
+    // foreach($colors as $val){
+    //     echo $val.'<br>';
+    // }
+
     
 
 
