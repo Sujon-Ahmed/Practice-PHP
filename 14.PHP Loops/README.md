@@ -46,6 +46,6 @@ The for loop is used when you know in advance how many times the script should r
 
 Parameters:
 
-    1. init counter: Initialize the loop counter value
-    2. test counter: Evaluated for each loop iteration. If it evaluates to TRUE, the loop continues. If it evaluates to FALSE, the loop ends.
-    3. increment counter: Increases the loop counter value
+    ✔ init counter: Initialize the loop counter value
+    ✔ test counter: Evaluated for each loop iteration. If it evaluates to TRUE, the loop continues. If it evaluates to FALSE, the loop ends.
+    ✔ increment counter: Increases the loop counter value
