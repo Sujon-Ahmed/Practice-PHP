@@ -1,0 +1,12 @@
+PHP Loops
+-----------------
+Often when you write code, you want the same block of code to run over and over again a certain number of times. So, instead of adding several almost equal code-lines in a script, we can use loops.
+
+Loops are used to execute the same block of code again and again, as long as a certain condition is true.
+
+In PHP, we have the following loop types:
+
+    1. while - loops through a block of code as long as the specified condition is true
+    2. do...while - loops through a block of code once, and then repeats the loop as long as the specified condition is true
+    3. for - loops through a block of code a specified number of times
+    4. foreach - loops through a block of code for each element in an array
