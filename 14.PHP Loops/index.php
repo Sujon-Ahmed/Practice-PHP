@@ -27,6 +27,11 @@
     //     $number+=10;
     // }
 
-    
+    // do...while loop
+    $number = 12;
+    do{
+        echo "The number is $number <br>";
+        $number++;
+    }while($number <= 10);
 
 ?>
