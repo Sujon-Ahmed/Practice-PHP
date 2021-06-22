@@ -25,9 +25,15 @@
     // }
 
     //Associative Arrays
+    //$age = array("Sujon"=>"21", "Toukir"=>"22", "Alamin"=>"23");
+    //echo "Sujon is " . $age['Sujon'] . " years old.";
+    
+    // Loop Thorough an Associative Array
     $age = array("Sujon"=>"21", "Toukir"=>"22", "Alamin"=>"23");
-    echo "Sujon is " . $age['Sujon'] . " years old.";
-
+    foreach($age as $key => $val){
+        echo "Key=" . $key . ", Value=" . $val;
+        echo '<br>';
+    }
 
 
 
