@@ -81,3 +81,21 @@ This example jumps out of the loop when x is equal to 4:
     }
     ?>
 </pre>
+
+Continue
+---------
+The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+
+This example skips the value of 4:
+
+<h3>Example</h3>
+<pre>
+    <?php
+    for ($x = 0; $x < 10; $x++) {
+    if ($x == 4) {
+        continue;
+    }
+    echo "The number is: $x <br>";
+    }
+    ?>
+</pre>
