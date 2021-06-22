@@ -71,6 +71,29 @@
     // print_r($newArray);
     // echo '</pre>';
 
+    // array_marge() function
+    /* $a = ['a'=>'sujon','b'=>'riman','c'=>'toukir'];
+    $b = ['d'=>'alamin','sumon'];
+    // array_merge() use for add two or many array
+    $newArray = array_merge($a,$b);
+
+    echo '<pre>';
+    print_r($newArray);
+    echo '</pre>'; */
+    
+
+    // array_merge_recursive() function
+    /* $a = ['a'=>'sujon','b'=>'ahmed','c'=>'riman'];
+    $b = ['b'=> ['color'=>['red','green']],'sumon'];
+
+    // array_merge_recursive() use for add two or many multidimensional array
+    // if have any common index or key it's make multidimensional array
+    $newArray = array_merge_recursive($a,$b);
+
+    echo '<pre>';
+    print_r($newArray);
+    echo '</pre>'; */
+
     
 
 
