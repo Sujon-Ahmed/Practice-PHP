@@ -46,7 +46,19 @@ The for loop is used when you know in advance how many times the script should r
 
 Parameters:
 
-    ✔ init counter: Initialize the loop counter value
-    ✔ test counter: Evaluated for each loop iteration. If it evaluates to TRUE, the loop continues. If it evaluates to FALSE, the loop ends.
-    ✔ increment counter: Increases the loop counter value
-    
+✔ init counter: Initialize the loop counter value
+✔ test counter: Evaluated for each loop iteration. If it evaluates to TRUE, the loop continues. If it evaluates to FALSE, the loop ends.
+✔ increment counter: Increases the loop counter value
+
+The PHP foreach Loop
+------------------------
+The foreach loop works only on arrays, and is used to loop through each key/value pair in an array.
+
+<h3>Syntax</h3>
+<pre>
+    foreach ($array as $value) {
+    code to be executed;
+    }
+</pre>
+For every loop iteration, the value of the current array element is assigned to $value and the array pointer is moved by one, until it reaches the last array element.
+
