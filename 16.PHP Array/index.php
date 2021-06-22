@@ -17,12 +17,17 @@
     // $cars = array('Volvo','BMW','Toyota');
     // echo "I like ".$cars[0]. ' , '. $cars[1]. ' and ', $cars[2];
 
-    $cars = array('Volvo','BMW','Toyota');
-    $arrLength = count($cars);
-    for ($i=0; $i < $arrLength ; $i++) { 
-       echo $cars[$i];
-       echo '<br>';
-    }
+    // $cars = array('Volvo','BMW','Toyota');
+    // $arrLength = count($cars);
+    // for ($i=0; $i < $arrLength ; $i++) { 
+    //    echo $cars[$i];
+    //    echo '<br>';
+    // }
+
+    //Associative Arrays
+    $age = array("Sujon"=>"21", "Toukir"=>"22", "Alamin"=>"23");
+    echo "Sujon is " . $age['Sujon'] . " years old.";
+
 
 
 
