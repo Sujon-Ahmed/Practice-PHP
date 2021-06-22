@@ -22,3 +22,9 @@ In PHP, the array() function is used to create an array:
 <pre>
 array();
 </pre>
+
+In PHP, there are three types of arrays:
+
+1. <strong>Indexed arrays</strong> - Arrays with a numeric index
+2. <strong>Associative arrays</strong> - Arrays with named keys
+3. <strong>Multidimensional arrays</strong> - Arrays containing one or more arrays
