@@ -11,7 +11,11 @@
     // echo "</pre>";
 
     // array insert
-    echo $arr[1] = 45;
+    //echo $arr[1] = 45;
+
+    // PHP Indexed Array
+    $cars = array('Volvo','BMW','Toyota');
+    echo "I like ".$cars[0]. ' , '. $cars[1]. ' and ', $cars[2];
 
     // count() function
     //echo count($array);
