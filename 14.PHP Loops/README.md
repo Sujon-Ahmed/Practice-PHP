@@ -72,14 +72,14 @@ This example jumps out of the loop when x is equal to 4:
 
 <h3>Example</h3>
 <pre>
-    <?php
+    
     for ($x = 0; $x < 10; $x++) {
     if ($x == 4) {
         break;
     }
     echo "The number is: $x <br>";
     }
-    ?>
+    
 </pre>
 
 Continue
@@ -90,12 +90,12 @@ This example skips the value of 4:
 
 <h3>Example</h3>
 <pre>
-    <?php
+    
     for ($x = 0; $x < 10; $x++) {
     if ($x == 4) {
         continue;
     }
     echo "The number is: $x <br>";
     }
-    ?>
+    
 </pre>
