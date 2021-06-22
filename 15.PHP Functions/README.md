@@ -13,3 +13,15 @@ Besides the built-in PHP functions, it is possible to create your own functions.
 1. A function is a block of statements that can be used repeatedly in a program.
 2. A function will not execute automatically when a page loads.
 3. A function will be executed by a call to the function.
+
+<h4>Create a User Defined Function in PHP</h4>
+A user-defined function declaration starts with the word function:
+
+<h3>Syntax</h3>
+<pre>
+    function functionName() {
+    code to be executed;
+    }
+</pre>
+
+<strong>Note:</strong> A function name must start with a letter or an underscore. Function names are NOT case-sensitive.
