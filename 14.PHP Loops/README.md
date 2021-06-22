@@ -62,3 +62,22 @@ The foreach loop works only on arrays, and is used to loop through each key/valu
 </pre>
 For every loop iteration, the value of the current array element is assigned to $value and the array pointer is moved by one, until it reaches the last array element.
 
+Break
+-----------
+You have already seen the break statement used in an earlier chapter of this tutorial. It was used to "jump out" of a switch statement.
+
+The break statement can also be used to jump out of a loop.
+
+This example jumps out of the loop when x is equal to 4:
+
+<h3>Example</h3>
+<pre>
+    <?php
+    for ($x = 0; $x < 10; $x++) {
+    if ($x == 4) {
+        break;
+    }
+    echo "The number is: $x <br>";
+    }
+    ?>
+</pre>
