@@ -94,5 +94,21 @@
     print_r($newArray);
     echo '</pre>'; */
 
+    // explode(); // string to array
+    // implode(); //array to string
+
+    // $arr = ['cricket','football','badminton'];
+
+    // $string = implode(',',$arr);
+
+    // echo $string;
+
+    
+    $str = "cricket,football,badminton";
+    $array = explode(',',$str);
+    // echo $str;
+    echo "<pre>";
+    print_r($array);
+    echo "</pre>";
 
 ?>
