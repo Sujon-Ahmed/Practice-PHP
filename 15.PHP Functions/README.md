@@ -25,3 +25,4 @@ A user-defined function declaration starts with the word function:
 </pre>
 
 <strong>Note:</strong> A function name must start with a letter or an underscore. Function names are NOT case-sensitive.
+
