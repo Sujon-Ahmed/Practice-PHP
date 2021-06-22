@@ -14,8 +14,17 @@
     //echo $arr[1] = 45;
 
     // PHP Indexed Array
+    // $cars = array('Volvo','BMW','Toyota');
+    // echo "I like ".$cars[0]. ' , '. $cars[1]. ' and ', $cars[2];
+
     $cars = array('Volvo','BMW','Toyota');
-    echo "I like ".$cars[0]. ' , '. $cars[1]. ' and ', $cars[2];
+    $arrLength = count($cars);
+    for ($i=0; $i < $arrLength ; $i++) { 
+       echo $cars[$i];
+       echo '<br>';
+    }
+
+
 
     // count() function
     //echo count($array);
