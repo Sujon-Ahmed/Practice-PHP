@@ -61,6 +61,19 @@
 
     // print_r(array_keys($array));
 
+    // array_combine() function
+    // $name = ['rahim','karim'];
+    // $age = [20,25];
+
+    // $newArray = array_combine($name,$age);
+
+    // echo '<pre>';
+    // print_r($newArray);
+    // echo '</pre>';
+
+    
+
+
 
 
 
