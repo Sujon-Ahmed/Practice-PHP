@@ -1,9 +1,17 @@
 <?php
 
-    function writeMsg(){
-        echo "Hello There!";
+    // function writeMsg(){
+    //     echo "Hello There!";
+    // }
+    // writeMsg(); // call the function
+
+    //Function Arguments
+    function friendsName($firstName){
+        echo "$firstName Ahmed <br>";
     }
-    writeMsg(); // call the function
+    friendsName('Sujon');
+    friendsName('Toukir');
+    friendsName('Alamin');
 
 
 

@@ -26,3 +26,11 @@ A user-defined function declaration starts with the word function:
 
 <strong>Note:</strong> A function name must start with a letter or an underscore. Function names are NOT case-sensitive.
 
+PHP Function Arguments
+--------------------------
+Information can be passed to functions through arguments. An argument is just like a variable.
+
+Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.
+
+The following example has a function with one argument ($firstName). When the friendsName() function is called, we also pass along a name (e.g. Sujon), and the name is used inside the function, which outputs several different first names, but an equal last name:
+
