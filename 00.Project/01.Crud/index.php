@@ -11,7 +11,7 @@
     <div class="container">
         <div class="row my-5">
             <div class="col-12">
-                <h2 class="text-center text-capitalize mb-3">simple crud</h2>
+                <h2 class="text-center text-capitalize mb-3">simple crud <a href="show.php" class="btn btn-primary btn-sm">Show</a></h2>
                 <?php
                     if(isset($_GET['valid']) && $_GET['valid'] == 'error'){
                         ?>
