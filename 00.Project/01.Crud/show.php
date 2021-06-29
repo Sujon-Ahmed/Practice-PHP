@@ -5,9 +5,21 @@
     }
     require 'connection.php';
 
-    $sql = "SELECT * FROM `simple`";
-
+    //$sql = "SELECT * FROM `simple`";
+    $sql = "SELECT simple.*,login.name AS log_name FROM simple INNER JOIN login ON simple.created_by = login.id";
     $result = $con->query($sql);
+
+    $user_id = $_SESSION['id'];
+    $user = "SELECT * FROM `login` WHERE id = '$user_id'";
+    $user_data = $con->query($user);
+
+    if($user_data->num_rows > 0) {
+        while($data = $user_data->fetch_object()) {
+            $id = $data->id;
+            $name = $data->name;
+            $email = $data->email;
+        }
+    }
 
 ?>
 
@@ -54,11 +66,12 @@
                             <th>Sl</th>
                             <th>Name</th>
                             <th>Email</th>
-                            <th>Phone</th>
+                            <th>Author</th>
+                            <!-- <th>Phone</th>
                             <th>District</th>
                             <th>Gender</th>
                             <th>Hobby</th>
-                            <th>Message</th>
+                            <th>Message</th> -->
                             <th>Created At</th>
                             <th>Action</th>
                         </tr>
@@ -74,14 +87,17 @@
                                             <td><?php echo $si; ?></td>
                                             <td><?php echo $row->name; ?></td>
                                             <td><?php echo $row->email; ?></td>
-                                            <td><?php echo $row->phone; ?></td>
+                                            <td><?php echo $row->log_name; ?></td>
+                                            <!-- <td><?php echo $row->phone; ?></td>
                                             <td><?php echo $row->district; ?></td>
                                             <td><?php echo $row->gender; ?></td>
                                             <td><?php echo $row->hobby; ?></td>
-                                            <td><?php echo $row->message; ?></td>
+                                            <td><?php echo $row->message; ?></td> -->
                                             <td><?php echo date('M-d-Y h:i A',strtotime($row->created_at)); ?></td>
                                             <td>
-                                                <a href="edit.php?id=<?php echo $row->id;?>" class="btn btn-primary btn-sm mb-2">Update</a>
+                                                <a href="edit.php?id=<?php echo $row->id;?>" class="btn btn-primary btn-sm">Update</a>
+
+                                                <a href="details.php?id=<?php echo $row->id;?>" class="btn btn-success btn-sm">View</a>
 
                                                 <a onclick="javascript:return confirm('Are You Sure?')" href="delete.php?id=<?php echo $row->id;?>" class="btn btn-danger btn-sm">Delete</a>
                                             </td>
