@@ -8,7 +8,7 @@
             $data = htmlspecialchars($data);
             return $data;
         }
-
+        $id = $_POST['id'];
         $name = test_input($_POST['name']);
         $email = test_input($_POST['email']);
         $phone = test_input($_POST['phone']);
@@ -19,10 +19,10 @@
 
         if($name != '' && $email != '' && $phone != '' && $district != '' && $gender != '' && $hobby != '' && $message != ''){
            
-            $sql = "INSERT INTO `simple`(`name`, `email`, `phone`, `district`, `gender`, `hobby`, `message`) VALUES ('$name','$email','$phone','$district','$gender','$hobby','$message')";
+            $sql = "UPDATE `simple` SET `name`='$name',`email`='$email',`phone`='$phone',`district`='$district',`gender`='$gender',`hobby`='$hobby',`message`='$message' WHERE id = '$id'";
 
             if($con->query($sql) == true){
-                header('location:index.php?insert=success');
+                header('location:edit.php?id='.$id.'&update=success');
             }else{
                 echo 'something went wrong';
             }
@@ -30,11 +30,11 @@
 
 
         }else{
-            header('location:index.php?valid=error');
+            header('location:edit.php?id='.$id.'&valid=error');
         }
 
     }else{
-        header('location:index.php');
+        header('location:edit.php');
     }
 
 
