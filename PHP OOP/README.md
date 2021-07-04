@@ -32,30 +32,38 @@ A class is defined by using the <code>class</code> keyword, followed by the name
 
 <h4>Syntax</h4>
 <pre> 
-    class Fruit {
-        // code goes here...
-    }
+class Fruit {
+    // code goes here...
+}
 </pre>
 
 Below we declare a class named Fruit consisting of two properties ($name and $color) and two methods set_name() and get_name() for setting and getting the $name property:
 
 <h4>Example</h4>
 <pre>
-    class Fruit {
-        // Properties
-        public $name;
-        public $color;
+class Fruit {
+    // Properties
+    public $name;
+    public $color;
 
-        // Methods
-        function set_name($name) {
-            $this->name = $name;
-        }
-        function get_name() {
-            return $this->name;
-        }
+    // Methods
+    function set_name($name) {
+        $this->name = $name;
     }
+    function get_name() {
+        return $this->name;
+    }
+}
 </pre>
 
 <strong>Note: In a class, variables are called properties and functions are called methods!</strong>
+
+Define Objects
+------------------
+Classes are nothing without objects! We can create multiple objects from a class. Each object has all the properties and methods defined in the class, but they will have different property values.
+
+Objects of a class is created using the <code>new</code> keyword.
+
+In the example below, $apple and $banana are instances of the class Fruit:
 
 
