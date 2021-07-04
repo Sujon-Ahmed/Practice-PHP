@@ -13,6 +13,24 @@ Object-oriented programming has several advantages over procedural programming:
 
 <strong>Tip:</strong> The "Don't Repeat Yourself" (DRY) principle is about reducing the repetition of code. You should extract out the codes that are common for the application, and place them at a single place and reuse them instead of repeating it.
 
+PHP - What are Classes and Objects?
+---------------------------------------
+PHP - What are Classes and Objects?
+
+_____________________________________________________
+|                        |                           |
+|        Class           |        Objects            |
+|                        |                           |
+|          Fruit         |        Apple              |
+|                        |        Banana             |
+|                        |        Mango              |
+|                        |                           |
+|                        |                           |
+|________________________|___________________________|
+
+So, a class is a template for objects, and an object is an instance of a class.
+
+When the individual objects are created, they inherit all the properties and behaviors from the class, but each object will have different values for the properties.
 
 
 
