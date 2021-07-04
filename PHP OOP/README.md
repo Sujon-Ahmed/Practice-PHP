@@ -60,5 +60,6 @@ Below we declare a class named Fruit consisting of two properties ($name and $co
     ?>
 </pre>
 
+<strong>Note: In a class, variables are called properties and functions are called methods!</strong>
 
 
