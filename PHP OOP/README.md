@@ -26,4 +26,19 @@ Let's assume we have a class named Fruit. A Fruit can have properties like name,
 
 When the individual objects (apple, banana, etc.) are created, they inherit all the properties and behaviors from the class, but each object will have different values for the properties.
 
+Define a Class
+-----------------
+A class is defined by using the <code>class</code> keyword, followed by the name of the class and a pair of curly braces ({}). All its properties and methods go inside the braces:
+
+<h4>Syntax</h4>
+<pre>
+    <code>
+        <?php
+        class Fruit {
+            // code goes here...
+        }
+        ?>
+    </code>
+</pre>
+
 
