@@ -32,13 +32,13 @@ A class is defined by using the <code>class</code> keyword, followed by the name
 
 <h4>Syntax</h4>
 <pre>
-    <code>
-        <?php
-        class Fruit {
-            // code goes here...
-        }
-        ?>
-    </code>
+    
+    <?php
+    class Fruit {
+        // code goes here...
+    }
+    ?>
+    
 </pre>
 
 
