@@ -15,22 +15,9 @@ Object-oriented programming has several advantages over procedural programming:
 
 PHP - What are Classes and Objects?
 ---------------------------------------
-PHP - What are Classes and Objects?
-
-_____________________________________________________
-|                        |                           |
-|        Class           |        Objects            |
-|                        |                           |
-|          Fruit         |        Apple              |
-|                        |        Banana             |
-|                        |        Mango              |
-|                        |                           |
-|                        |                           |
-|________________________|___________________________|
-
-So, a class is a template for objects, and an object is an instance of a class.
+Classes and objects are the two main aspects of object-oriented programming.
+A class is a template for objects, and an object is an instance of class.
 
 When the individual objects are created, they inherit all the properties and behaviors from the class, but each object will have different values for the properties.
-
 
 
