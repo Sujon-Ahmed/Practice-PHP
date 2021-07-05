@@ -93,5 +93,14 @@ class Fruit {
 $apple = new Fruit();
 $apple->set_name("Apple");
 </pre>
+2. Outside the class (by directly changing the property value):
+<h4>Example</h4>
+<pre>
+class Fruit {
+  public $name;
+}
+$apple = new Fruit();
+$apple->name = "Apple";
+</pre>
 
 
