@@ -82,3 +82,16 @@ So, where can we change the value of the $name property? There are two ways:
 
 1. Inside the class (by adding a set_name() method and use $this):
 
+<h4>Example</h4>
+<pre>
+class Fruit {
+  public $name;
+  function set_name($name) {
+    $this->name = $name;
+  }
+}
+$apple = new Fruit();
+$apple->set_name("Apple");
+</pre>
+
+
