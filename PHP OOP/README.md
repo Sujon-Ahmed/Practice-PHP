@@ -72,11 +72,13 @@ The $this keyword refers to the current object, and is only available inside met
 
 Look at the following example:
 <pre>
-<?php
 class Fruit {
   public $name;
 }
 $apple = new Fruit();
-?>
 </pre>
+
+So, where can we change the value of the $name property? There are two ways:
+
+1. Inside the class (by adding a set_name() method and use $this):
 
