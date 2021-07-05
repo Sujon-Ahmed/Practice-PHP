@@ -66,4 +66,17 @@ Objects of a class is created using the <code>new</code> keyword.
 
 In the example below, $apple and $banana are instances of the class Fruit:
 
+PHP - The $this Keyword
+------------------------
+The $this keyword refers to the current object, and is only available inside methods.
+
+Look at the following example:
+<pre>
+<?php
+class Fruit {
+  public $name;
+}
+$apple = new Fruit();
+?>
+</pre>
 
