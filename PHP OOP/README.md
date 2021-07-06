@@ -135,4 +135,10 @@ There are three access modifiers:
 
 In the following example we have added three different access modifiers to the three properties. Here, if you try to set the name property it will work fine (because the name property is public). However, if you try to set the color or weight property it will result in a fatal error (because the color and weight property are protected and private):
 
+PHP - What is Inheritance?
+---------------------------
+Inheritance in OOP = When a class derives from another class.
 
+The child class will inherit all the public and protected properties and methods from the parent class. In addition, it can have its own properties and methods.
+
+An inherited class is defined by using the <code>extends</code> keyword.
