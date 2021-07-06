@@ -101,7 +101,8 @@
 //    $obj->insert();
 //    $obj->update();
 
-   class Fruit {
+    //    __construct methods
+   /* class Fruit {
        public $name;
        public $color;
 
@@ -122,7 +123,24 @@
    $apple = new Fruit('Apple', 'Red');
    echo $apple->get_name();
    echo '<br>';
-   echo $apple->get_color();
+   echo $apple->get_color(); */
+
+    //  __Destruct methods
+    class fruit {
+        public $name;
+        public $color;
+
+        public function __construct($name, $color)
+        {
+           $this->name = $name;
+           $this->color = $color;     
+        }
+        public function __destruct()
+        {
+            echo "The fruit is {$this->name} and the color is {$this->color}."; 
+        }
+    }   
+    $apple = new fruit('Banana', 'Yellow');
 
 
 

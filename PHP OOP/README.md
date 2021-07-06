@@ -123,4 +123,16 @@ Notice that the destruct function starts with two underscores (__)!
 
 The example below has a __construct() function that is automatically called when you create an object from a class, and a __destruct() function that is automatically called at the end of the script:
 
+PHP - Access Modifiers
+-------------------------
+Properties and methods can have access modifiers which control where they can be accessed.
+
+There are three access modifiers:
+
+1. <strong>public</strong> - the property or method can be accessed from everywhere. This is default
+2. <strong>protected</strong> - the property or method can be accessed within the class and by classes derived from that class
+3. <strong>private</strong> - the property or method can ONLY be accessed within the class
+
+In the following example we have added three different access modifiers to the three properties. Here, if you try to set the name property it will work fine (because the name property is public). However, if you try to set the color or weight property it will result in a fatal error (because the color and weight property are protected and private):
+
 
