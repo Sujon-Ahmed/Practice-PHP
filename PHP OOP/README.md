@@ -103,4 +103,14 @@ $apple = new Fruit();
 $apple->name = "Apple";
 </pre>
 
+PHP - The __construct Function
+--------------------------------
+A constructor allows you to initialize an object's properties upon creation of the object.
+
+If you create a <code>__construct()</code> function, PHP will automatically call this function when you create an object from a class.
+
+Notice that the construct function starts with two underscores (__)!
+
+We see in the example below, that using a constructor saves us from calling the set_name() method which reduces the amount of code:
+
 
