@@ -1,4 +1,19 @@
 <?php
+    
+/**
+     // Syntax and called static method
+    class ClassName {
+        public static function StaticFunction(){
+            echo "Hello_World!";
+        }
+    }
+    // called static method
+    ClassName::StaticFunction(); 
+*/
+
+
+    
+
 /**
     // static properties
     class pi {
@@ -13,6 +28,7 @@
     echo $obj->static_value();
 */
 
+/**
     // static properties with inheritance
     class xyz {
         public static $name = "Muhammad Lal Miah";
@@ -22,11 +38,13 @@
         public static $name = "Muhammad Sujon Miah";
         public function dis() {
             return self::$name;
+            return parent::$name;
         }
     }
 
     $obj = new abc();
-    echo $obj->dis();
+    echo $obj->dis(); 
+*/
 
 
 
