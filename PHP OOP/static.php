@@ -42,10 +42,23 @@
     echo $obj->message(); 
 
 */
-   
 
+/**
+   // static method with inheritance
+    class xyz {
+        protected static $name = "Father";
+    }
+    class abc extends xyz {
+        public static $name = "Child";
+        public function dis() {
+            return self::$name;
+            return parent::$name;
+        }
+    }
 
-    
+    $obj = new abc();
+    echo $obj->dis();  
+*/
 
 /**
     // static properties
@@ -56,28 +69,13 @@
         }
     }
     // Get static property
-    //echo pi::$value;
-    $obj = new pi();
-    echo $obj->static_value();
+    echo pi::$value;
+    // $obj = new pi();
+    // echo $obj->static_value();
+
 */
 
-/**
     // static properties with inheritance
-    class xyz {
-        public static $name = "Muhammad Lal Miah";
-    }
-
-    class abc extends xyz {
-        public static $name = "Muhammad Sujon Miah";
-        public function dis() {
-            return self::$name;
-            return parent::$name;
-        }
-    }
-
-    $obj = new abc();
-    echo $obj->dis(); 
-*/
 
 
 
