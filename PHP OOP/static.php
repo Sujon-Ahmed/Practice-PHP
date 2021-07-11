@@ -10,6 +10,7 @@
     // called static method
     ClassName::StaticFunction(); 
 */
+
 /**
     // same class
     class greeting {
@@ -22,6 +23,24 @@
         }
     }
     $obj = new greeting(); 
+*/
+
+/**     
+    // some other classes
+    class greeting {
+        public static function welcome() {
+            echo "Hello";
+        }
+    }
+    class someOtherClass {
+        public function message() {
+            greeting::welcome();
+        }
+    }
+
+    $obj = new someOtherClass();
+    echo $obj->message(); 
+
 */
    
 
