@@ -76,7 +76,17 @@
 */
 
     // static properties with inheritance
-
+    class Clan {
+        public static $name = "Father";
+    }
+    class Family extends Clan {
+        public static $name = "Child";
+        public function Nation(){
+            return parent::$name;
+        }
+    }
+    $obj = new Family();
+    echo $obj->Nation();
 
 
 
