@@ -10,6 +10,20 @@
     // called static method
     ClassName::StaticFunction(); 
 */
+/**
+    // same class
+    class greeting {
+        public static function welcome() {
+            echo "HI";
+        }
+        public function __construct()
+        {
+            self::welcome();
+        }
+    }
+    $obj = new greeting(); 
+*/
+   
 
 
     
