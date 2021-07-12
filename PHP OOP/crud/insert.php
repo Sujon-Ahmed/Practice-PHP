@@ -1,5 +1,7 @@
 <?php
     include 'main.php';
+    include 'flash_data.php';
+    session_start();
     $obj = new Main();
     
     if(isset($_POST['submit']) && $_SERVER["REQUEST_METHOD"] == "POST"){
@@ -23,13 +25,16 @@
             $status = $obj->insert($name,$email,$phone,$district,$gender,$hobby,$message);
 
             if($status == true){
-                header('location:index.php?insert=success');
+                Flash_data::success("Data Inserted SuccessFully");
+                header('location:index.php');
             }else{
-                echo 'something went wrong';
+                Flash_data::error("Some Went Wrong.Please Try Again");
+                header('location:index.php');
             }
 
         }else{
-            header('location:index.php?valid=error');
+            Flash_data::error("All Felid Are Required!");
+            header('location:index.php');
         }
     }else{
         header('location:index.php');

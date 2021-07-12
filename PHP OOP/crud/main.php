@@ -1,5 +1,4 @@
 <?php
-
     class Main {
         // initialize database all properties
         protected $host = 'localhost';
@@ -34,6 +33,18 @@
             }else{
                 return false;
                 // echo 'ERROR';
+            }
+        }
+
+        // show data
+        public function showData() {
+            $this->sql = "SELECT * FROM `simple`";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true) {
+                return $this->result;
+            }
+            else{
+                return false;
             }
         }
 

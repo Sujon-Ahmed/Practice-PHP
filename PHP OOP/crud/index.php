@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    include 'flash_data.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,25 +17,29 @@
             <div class="col-12">
                 <h2 class="text-center text-capitalize mb-3">simple crud <a class="btn btn-primary btn-sm" href="show.php">Show</a></h2>
                 <?php
-                    if(isset($_GET['valid']) && $_GET['valid'] == 'error'){
-                        ?>
-                            <div class="alert alert-danger" role="alert">
-                                All Field Are Required!
-                            </div>
-                        <?php
+                if(isset($_SESSION['msg']['error'])){
+                    ?>
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong class="text-center d-block"><?php echo Flash_data::show_error();?></strong>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <?php 
                     }
-                
                 ?>
 
                 <?php
-                    if(isset($_GET['insert']) && $_GET['insert'] == 'success'){
-                        ?>
-                            <div class="alert alert-success" role="alert">
-                                SuccessFully Data Inserted!
-                            </div>
-                        <?php
+                if(isset($_SESSION['msg']['success'])){
+                    ?>
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong class="text-center d-block"><?php echo Flash_data::show_error();?></strong>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <?php 
                     }
-                
                 ?>
                 <form action="insert.php" method="POST">
                     <div class="form-row mb-2">
@@ -103,5 +111,8 @@
             </div>
         </div>
     </div>
+     <!-- script here -->
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>  
 </body>
 </html>
