@@ -24,6 +24,18 @@
     <div class="container">
         <div class="row my-5">
             <div class="col-md-12">
+            <?php
+                if(isset($_SESSION['msg']['success'])){
+                    ?>
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong class="text-center d-block"><?php echo Flash_data::show_error();?></strong>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <?php 
+                    }
+                ?>
                 <h2 class="text-center text-capitalize mb-3">simple crud <a href="index.php" class="btn btn-primary btn-sm">Insert</a></h2>
 
                 <table id="data_table" class="table table-striped table-bordered" style="width:100%">

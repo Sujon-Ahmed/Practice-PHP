@@ -21,15 +21,39 @@
         $message = test_input($_POST['message']);
 
         if($name != '' && $email != '' && $phone != '' && $district != '' && $gender != '' && $hobby != '' && $message != ''){
-           
-            $status = $obj->insert($name,$email,$phone,$district,$gender,$hobby,$message);
 
-            if($status == true){
-                Flash_data::success("Data Inserted SuccessFully");
-                header('location:index.php');
-            }else{
-                Flash_data::error("Some Went Wrong.Please Try Again");
-                header('location:index.php');
+            if(!empty($_FILES['file']['name'])){
+                // print_r($_FILES['file]);
+                $fileName = $_FILES['file']['name'];
+                $fileTmp = $_FILES['file']['tmp_name'];
+                $fileExt = explode('.',$fileName);
+                $fileActualExt = strtolower(end($fileExt));
+                $allowed = array('jpg','jpeg','png');
+
+                if(in_array($fileActualExt,$allowed)){
+                    $fileError = $_FILES['file']['error'];
+                    if($fileError == 0){
+                        $fileNewName = uniqid('',true).'.'.$fileActualExt;
+                        $fileDestination = "uploads/".$fileNewName;
+                        if(move_uploaded_file($fileTmp,$fileDestination)){
+
+                             $status = $obj->insert($fileNewName,$name,$email,$phone,$district,$gender,$hobby,$message);
+                            if($status == true){
+                                Flash_data::success("Data Inserted SuccessFully");
+                                header('location:index.php');
+                            }else{
+                                Flash_data::error("Some Went Wrong.Please Try Again");
+                                header('location:index.php');
+                            }
+                        }
+                    }else{
+                        Flash_data::error("File Error!");
+                        header('location:index.php');
+                    }
+                }else{
+                    Flash_data::error("This Type of File Ext Not Allowed!");
+                    header('location:index.php');
+                }
             }
 
         }else{

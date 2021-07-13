@@ -41,7 +41,7 @@
                     <?php 
                     }
                 ?>
-                <form action="insert.php" method="POST">
+                <form action="insert.php" method="POST" enctype="multipart/form-data">
                     <div class="form-row mb-2">
                         <div class="col">
                             <label for="name">Enter Name</label>
@@ -80,6 +80,12 @@
 
                                 <input type="radio" value="female" id="female" name="gender">
                                 <label for="female">Female</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="">
+                                <label for="img" class="mt-2">Photo Upload</label>
+                                <input type="file" class="file-control" name="file" id="img">
                             </div>
                         </div>
                         <div class="col">

@@ -23,8 +23,8 @@
         }
 
         // insert data
-        public function insert($name,$email,$phone,$district,$gender,$hobby,$message) {
-            $this->sql = "INSERT INTO `simple`(`name`, `email`, `phone`, `district`, `gender`, `hobby`, `message`) VALUES ('$name','$email','$phone','$district','$gender','$hobby','$message')";
+        public function insert($photo,$name,$email,$phone,$district,$gender,$hobby,$message) {
+            $this->sql = "INSERT INTO `simple`(`photo`,`name`, `email`, `phone`, `district`, `gender`, `hobby`, `message`) VALUES ('$photo','$name','$email','$phone','$district','$gender','$hobby','$message')";
 
             $this->result = $this->con->query($this->sql);
             if($this->result == true) {
