@@ -41,28 +41,6 @@
     <div class="container">
         <div class="row my-3">
             <div class="col-12">
-                <!-- <h2 class="text-center text-capitalize mb-3">simple crud <a class="btn btn-primary btn-sm" href="show.php">Show</a></h2> -->
-                <?php
-                    if(isset($_GET['valid']) && $_GET['valid'] == 'error'){
-                        ?>
-                            <div class="alert alert-danger" role="alert">
-                                All Field Are Required!
-                            </div>
-                        <?php
-                    }
-                
-                ?>
-
-                <?php
-                    if(isset($_GET['update']) && $_GET['update'] == 'success'){
-                        ?>
-                            <div class="alert alert-success" role="alert">
-                                SuccessFully Data Updated!
-                            </div>
-                        <?php
-                    }
-                
-                ?>
                  <div class="modal-body">
                     <h3 class="text-center">Details Information <a href="show.php" class="btn btn-primary btn-sm">Show</a></h3>
                     <hr>
