@@ -48,6 +48,18 @@
             }
         }
 
+        // details
+        public function details($id){
+            $this->sql = "SELECT * FROM `simple` WHERE id = '$id'";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true) {
+                return $this->result;
+            }
+            else{
+                return false;
+            }
+        }
+
         // close connection
         public function __destruct()
         {
