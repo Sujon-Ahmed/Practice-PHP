@@ -36,6 +36,19 @@
             }
         }
 
+        public function update($photo,$name,$email,$phone,$district,$gender,$hobby,$message) {
+            $this->sql = "INSERT INTO `simple`(`photo`,`name`, `email`, `phone`, `district`, `gender`, `hobby`, `message`) VALUES ('$photo','$name','$email','$phone','$district','$gender','$hobby','$message')";
+
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true) {
+                return true;
+                // echo 'OK';
+            }else{
+                return false;
+                // echo 'ERROR';
+            }
+        }
+
         // show data
         public function showData() {
             $this->sql = "SELECT * FROM `simple`";
@@ -50,6 +63,18 @@
 
         // details
         public function details($id){
+            $this->sql = "SELECT * FROM `simple` WHERE id = '$id'";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true) {
+                return $this->result;
+            }
+            else{
+                return false;
+            }
+        }
+
+        // get by id
+        public function getData($id){
             $this->sql = "SELECT * FROM `simple` WHERE id = '$id'";
             $this->result = $this->con->query($this->sql);
             if($this->result == true) {
