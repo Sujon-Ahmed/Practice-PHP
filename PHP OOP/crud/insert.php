@@ -64,8 +64,4 @@
         header('location:index.php');
     }
 
-
-
-
-
 ?>

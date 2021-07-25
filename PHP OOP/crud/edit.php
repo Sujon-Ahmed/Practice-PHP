@@ -114,6 +114,7 @@
                                 <label for="img" class="mt-2">Photo Upload</label>
                                 <input type="file" class="file-control" name="file" id="img">
                                 <input type="hidden" value="<?php echo $photo;?>" class="file-control" name="oldfile" id="img">
+                                
                                 <img class="img-fluid img-thumbnail mt-3" width="130px" height="130px" src="<?php echo 'uploads/'.$photo; ?>" alt="">
                             </div>
                         </div>

@@ -35,9 +35,23 @@
                 // echo 'ERROR';
             }
         }
+        // update with photo
+        public function update_photo($id,$fileNewName,$name,$email,$phone,$district,$gender,$hobby,$message) {
+            $this->sql = "UPDATE `simple` SET `photo`='$fileNewName',`name`='$name',`email`='$email',`phone`='$phone',`district`='$district',`gender`='$gender',`hobby`='$hobby',`message`='$message' WHERE id = '$id'";
 
-        public function update($photo,$name,$email,$phone,$district,$gender,$hobby,$message) {
-            $this->sql = "INSERT INTO `simple`(`photo`,`name`, `email`, `phone`, `district`, `gender`, `hobby`, `message`) VALUES ('$photo','$name','$email','$phone','$district','$gender','$hobby','$message')";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true) {
+                return true;
+                // echo 'OK';
+            }else{
+                return false;
+                // echo 'ERROR';
+            }
+        }
+
+        // update without photo
+        public function update($id,$oldphoto,$name,$email,$phone,$district,$gender,$hobby,$message) {
+            $this->sql = "UPDATE `simple` SET `photo`='$oldphoto',`name`='$name',`email`='$email',`phone`='$phone',`district`='$district',`gender`='$gender',`hobby`='$hobby',`message`='$message' WHERE id = '$id'";
 
             $this->result = $this->con->query($this->sql);
             if($this->result == true) {
