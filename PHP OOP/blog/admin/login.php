@@ -2,9 +2,9 @@
     session_start();
     include 'flash_data.php';
 
-    // if(isset($_SESSION['id'])){
-    //     header('location:index.php');
-    // }
+    if(isset($_SESSION['id'])){
+        header('location:index.php');
+    }
     
 ?>
 <!DOCTYPE html>
@@ -46,22 +46,33 @@
                                                 <?php
                                             }
                                         ?>
-                                        <form>
+
+                                         <!-- toastr error message -->
+                                         <?php
+                                            if(isset($_SESSION['msg']['error'])){
+                                                ?>
+                                                    <script>
+                                                        toastr.error("<?php echo Flash_data::show_error(); ?>");
+                                                    </script>
+                                                <?php
+                                            }
+                                        ?>
+                                        <form action="auth.php" method="POST">
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
+                                                <input class="form-control" id="inputEmail" name="email" required type="email" placeholder="name@example.com" />
                                                 <label for="inputEmail">Email address</label>
                                             </div>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputPassword" type="password" placeholder="Password" />
+                                                <input class="form-control" id="inputPassword" name="password" required type="password" placeholder="Password" />
                                                 <label for="inputPassword">Password</label>
                                             </div>
-                                            <div class="form-check mb-3">
+                                            <!-- <div class="form-check mb-3">
                                                 <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
                                                 <label class="form-check-label" for="inputRememberPassword">Remember Password</label>
-                                            </div>
+                                            </div> -->
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="small" href="password.php">Forgot Password?</a>
-                                                <a class="btn btn-primary" href="index.html">Login</a>
+                                                <!-- <a class="small" href="password.php">Forgot Password?</a> -->
+                                                <input type="submit" name="submit" class="btn btn-primary" value="Login" />
                                             </div>
                                         </form>
                                     </div>

@@ -2,9 +2,9 @@
     session_start();
     include 'flash_data.php';
 
-    // if(isset($_SESSION['id'])){
-    //     header('location:index.php');
-    // }
+    if(isset($_SESSION['id'])){
+        header('location:index.php');
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -31,6 +31,17 @@
             }
         }
 
+        // check email
+        public function check_email($email){
+            $this->sql ="SELECT * FROM `user` WHERE user_email = '$email'";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return $this->result;
+            }else{
+                return false;
+            }
+        }
+
 
         // close connection
         public function __destruct()
