@@ -1,5 +1,5 @@
 <?php
-    class Flass_data
+    class Flash_data
     {
         public static function show_error(){
             if(!isset($_SESSION['msg'])){

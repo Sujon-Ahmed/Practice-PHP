@@ -1,5 +1,6 @@
 <?php
-session_start();
+    session_start();
+    include 'link.php';
     include 'flash_data.php';
 ?>
 <!DOCTYPE html>
@@ -12,9 +13,36 @@ session_start();
         <meta name="author" content="" />
         <title>Register - SB Admin</title>
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="css/toastr.css">
+        <script src="js/toastr.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
     <body class="bg-primary">
+
+        <!-- toastr success message -->
+        <?php
+            if(isset($_SESSION['msg']['success'])){
+                ?>
+                    <script>
+                        toastr.success("<?php echo Flash_data::show_error(); ?>");
+                    </script>
+                <?php
+            }
+        ?>
+
+        <!-- toastr error message -->
+        <?php
+            if(isset($_SESSION['msg']['error'])){
+                ?>
+                    <script>
+                        toastr.error("<?php echo Flash_data::show_error(); ?>");
+                    </script>
+                <?php
+            }
+        ?>
+
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
                 <main>
