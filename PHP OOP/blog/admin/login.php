@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    include 'flash_data.php';
+
+    // if(isset($_SESSION['id'])){
+    //     header('location:index.php');
+    // }
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,7 +17,14 @@
         <meta name="author" content="" />
         <title>Login - SB Admin</title>
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="js/jquery.js"></script>
+        <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+        <link rel="stylesheet" href="css/toastr.css">
+        <script src="js/toastr.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+        <!-- parsley cdn link -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.js" integrity="sha512-Fq/wHuMI7AraoOK+juE5oYILKvSPe6GC5ZWZnvpOO/ZPdtyA29n+a5kVLP4XaLyDy9D1IBPYzdFycO33Ijd0Pg==" crossorigin="anonymous"></script>
     </head>
     <body class="bg-primary">
         <div id="layoutAuthentication">
@@ -20,6 +36,16 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
                                     <div class="card-body">
+                                         <!-- toastr success message -->
+                                        <?php
+                                            if(isset($_SESSION['msg']['success'])){
+                                                ?>
+                                                    <script>
+                                                        toastr.success("<?php echo Flash_data::show_error(); ?>");
+                                                    </script>
+                                                <?php
+                                            }
+                                        ?>
                                         <form>
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
@@ -34,13 +60,13 @@
                                                 <label class="form-check-label" for="inputRememberPassword">Remember Password</label>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="small" href="password.html">Forgot Password?</a>
+                                                <a class="small" href="password.php">Forgot Password?</a>
                                                 <a class="btn btn-primary" href="index.html">Login</a>
                                             </div>
                                         </form>
                                     </div>
                                     <div class="card-footer text-center py-3">
-                                        <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
+                                        <div class="small"><a href="register.php">Need an account? Sign up!</a></div>
                                     </div>
                                 </div>
                             </div>

@@ -1,6 +1,5 @@
 <?php
     session_start();
-    include 'link.php';
     include 'flash_data.php';
     include 'main.php';
     $obj = new Main();
@@ -20,10 +19,10 @@
             $status = $obj->register($name,$email,$password);
 
             if($status == true){
-                Flash_data::success("Data Inserted SuccessFully");
+                Flash_data::success("Account Created Success! Please Login!");
                 header("location:login.php");
             }else{
-                Flash_data::error("Some Went Wrong.Please Try Again");
+                Flash_data::error("Provide a valid or unique Email");
                 header("location:register.php");
             }
         }else{
@@ -31,6 +30,7 @@
             header("location:register.php");
         }   
     }else{
+        Flash_data::error("Something Went Wrong!");
         header("location:register.php");
     }
 

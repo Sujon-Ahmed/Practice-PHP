@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    include "Flash_data.php";
+
+    // if(!isset($_SESSION['id'])){
+    //     header('location:login.php');
+    // }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
