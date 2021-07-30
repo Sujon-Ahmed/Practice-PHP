@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include 'Flash_data.php';
+    include 'flash_data.php';
     include 'main.php';
     $obj = new Main();
 

@@ -1,10 +1,9 @@
 <?php
-
     session_start();
     if(!isset($_SESSION['id'])){
         header('location:login.php');
     }
-    include "Flash_data.php";
+    include "flash_data.php";
     include "main.php";
     $obj = new Main();
 
@@ -18,16 +17,16 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Dashboard - SB Admin</title>
-        <link href="css/styles.css" rel="stylesheet" />
-        <script src="js/jquery.js"></script>
-        <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
-        <link rel="stylesheet" href="css/toastr.css">
-        <script src="js/toastr.min.js"></script>
-        <script src="js/jquery-3.4.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.js" integrity="sha512-Fq/wHuMI7AraoOK+juE5oYILKvSPe6GC5ZWZnvpOO/ZPdtyA29n+a5kVLP4XaLyDy9D1IBPYzdFycO33Ijd0Pg==" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+        <!-- some script  -->
+        <link rel="stylesheet" href="css/toastr.css">
+        <!-- <script src="js/jquery.js"></script> -->
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/toastr.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.js" integrity="sha512-Fq/wHuMI7AraoOK+juE5oYILKvSPe6GC5ZWZnvpOO/ZPdtyA29n+a5kVLP4XaLyDy9D1IBPYzdFycO33Ijd0Pg==" crossorigin="anonymous"></script>
         <style>
             .parsley-errors-list li{
                 color: red;
