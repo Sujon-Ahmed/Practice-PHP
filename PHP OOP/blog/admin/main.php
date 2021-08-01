@@ -67,6 +67,20 @@
             }
         }
 
+        // change_pass
+        public function change_pass($pass,$id){
+            $this->sql = "UPDATE `user` SET `user_password`='$pass' WHERE user_id = '$id'";
+
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true) {
+                return true;
+                // echo 'OK';
+            }else{
+                return false;
+                // echo 'ERROR';
+            }
+        }
+
 
         // close connection
         public function __destruct()

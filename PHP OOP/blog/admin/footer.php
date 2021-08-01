@@ -27,5 +27,11 @@
                 $('#profile').parsley();
             });
         </script>
+        <script>
+            $(function(){
+                $('#change_password').parsley();
+            });
+        </script>
+        
     </body>
 </html>

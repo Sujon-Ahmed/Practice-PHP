@@ -24,7 +24,7 @@
                 </ol>
                 <div class="card mb-4">
                     <div class="card-header d-flex justify-content-between align-items-center">
-                        <div><i class="fas fa-edit me-1"></i>Edit Profile</div>
+                        <div><i class="fas fa-user-edit me-1"></i>Edit Profile</div>
                         <div><a href="change_password.php" class="btn btn-primary btn-sm"><i class="fas fa-key me-1"></i>Change Password</a></div>
                     </div>
                     <div class="card-body">
