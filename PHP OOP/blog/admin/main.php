@@ -81,6 +81,27 @@
             }
         }
 
+        // =============================== category section ========================
+        public function create_category($cat_icon,$cat_name){
+            $this->sql ="INSERT INTO `category`(`cat_name`, `cat_icon`) VALUES ('$cat_name','$cat_icon')";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        public function get_cat(){
+            $this->sql ="SELECT * FROM `category`";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return $this->result;
+            }else{
+                return false;
+            }
+        }
+
 
         // close connection
         public function __destruct()
