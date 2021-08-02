@@ -1,19 +1,33 @@
 <?php
-    $page = 'post';
-    $sub_page = 'add_post';
+    // $page = 'category';
+    // $sub_page = 'add_category';
     include 'header.php';
+
+    if(isset($_GET['id'])) {
+        $id = $_GET['id'];
+        $data = $obj->get_cats($id);
+
+        if($data->num_rows>0){
+            while($row_cats = $data->fetch_object()){
+                $id = $row_cats->cat_id;
+                $name = $row_cats->cat_name;
+                $icon = $row_cats->cat_icon;
+               
+            }
+        }
+    }
 ?>
     <div id="layoutSidenav_content">
         <main>
             <div class="container-fluid px-4">
                 <h1 class="mt-4 active">Dashboard</h1>
                 <ol class="breadcrumb mb-4">
-                    <li class="breadcrumb-item active">Dashboard / Post / Create</li>
+                    <li class="breadcrumb-item active">Dashboard / Category / Edit</li>
                 </ol>
                 <div class="card mb-4">
                     <div class="card-header d-flex justify-content-between align-items-center">
-                        <div><i class="fas fa-edit me-1"></i>Create_Post</div>
-                        <div><a href="view_post.php" class="btn btn-primary btn-sm"><i class="fas fa-eye me-1"></i>View Post</a></div>
+                        <div><i class="fas fa-edit me-1"></i>Edit_Category</div>
+                        <div><a href="view_category.php" class="btn btn-primary btn-sm"><i class="fas fa-eye me-1"></i>View Category</a></div>
                     </div>
                     <div class="card-body">
                         <!-- toastr error message -->
@@ -37,27 +51,16 @@
                                 <?php
                             }
                         ?>
-                    <form action="create_category.php" id="post" method="POST" enctype="multipart/form-data">                        
+                    <form action="update_category.php" id="update_category" method="POST">                        
                             <div class="row">
-                                <div class="col-md-10 m-auto">
-                                    
-                                    <label for="post_title" class="mt-1">Post Title</label>
-                                    <input type="text" name="post_title" data-parsley-trigger="keyup" data-parsley-minlength="3" class="form-control mb-1 mt-1" placeholder="Post Title" id="post_title" required>
+                                <div class="col-md-8 m-auto">
+                                    <label for="icon">Category Icon <small><a class="me-1 text-decoration-none" href="https://fontawesome.com/v5.15/icons?d=gallery&p=2" target="_blank" title="fontawesome.com">Visit Site</a></small></label>
+                                    <input type="text" name="cat_icon" value="<?php echo $icon; ?>" class="form-control mb-3 mt-1" placeholder="Example : fa fa-user" id="cat_icon"  required>
 
-                                    <label for="cat_name" class="mb-1">Category Name</label>
-                                    <select name="cat_name" class="form-control" required id="cat_name">
-                                        <option value="">Select Category</option>
-                                        <option value=""></option>
-                                    </select>
-
-                                    <label for="tag" class="mt-1">Tag</label>
-                                    <input type="text" name="tag" class="form-control mb-1 mt-1" placeholder="Post Tag" id="tag" required>
-
-                                    <label for="post_description" class="mt-1">Post Description</label>
-                                    <textarea name="body" id="description" class="form-control " cols="10" rows="5"></textarea>
-                                    
-                                                                       
-                                    <input type="submit" value="Submit" name="submit" class="btn btn-success btn-block w-100 mt-3 mb-5">
+                                    <label for="name">Category Name</label>
+                                    <input type="text" name="cat_name" value="<?php echo $name; ?>" data-parsley-trigger="keyup" data-parsley-minlength="3" class="form-control mb-3 mt-1" placeholder="Category Name" id="cat_name" required>
+                                    <input type="hidden" name="cat_id" value="<?php echo $id;?>">                                   
+                                    <input type="submit" value="Submit" name="submit" class="btn btn-success btn-block w-100 mt-2 mb-5">
                                 </div>
                             </div>
                         </form>

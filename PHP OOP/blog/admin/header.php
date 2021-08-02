@@ -22,11 +22,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
         <!-- some script  -->
         <link rel="stylesheet" href="css/toastr.css">
+        <link rel="stylesheet" href="../admin/summernote/summernote-bs4.min.css">
         <!-- <script src="js/jquery.js"></script> -->
 
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/toastr.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.js" integrity="sha512-Fq/wHuMI7AraoOK+juE5oYILKvSPe6GC5ZWZnvpOO/ZPdtyA29n+a5kVLP4XaLyDy9D1IBPYzdFycO33Ijd0Pg==" crossorigin="anonymous"></script>
+
+
       
         <style>
             .parsley-errors-list li{

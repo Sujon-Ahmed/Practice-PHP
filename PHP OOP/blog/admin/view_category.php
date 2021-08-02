@@ -70,8 +70,8 @@
                                                     <td class="text-capitalize"><?php echo $cat->cat_name; ?></td>
                                                     <td><?php echo date('M-d-Y h:i A',strtotime($cat->cat_created_at)); ?></td>
                                                     <td>
-                                                        <a href="#" class="btn btn-primary btn-sm" title="Edit"><i class="fa fa-edit"></i></a>
-                                                        <a href="#" class="btn btn-danger btn-sm" title="Delete"><i class="fa fa-trash-alt"></i></a>
+                                                        <a href="edit_category.php?id=<?php echo $cat->cat_id;?>" class="btn btn-primary btn-sm" title="Edit"><i class="fa fa-edit"></i></a>
+                                                        <a href="delete_category.php?id=<?php echo $cat->cat_id;?>" class="btn btn-danger btn-sm" onclick="javascript:return confirm('Delete This Category?');" title="Delete"><i class="fa fa-trash-alt"></i></a>
                                                     </td>
                                                 </tr> 
                                             <?php

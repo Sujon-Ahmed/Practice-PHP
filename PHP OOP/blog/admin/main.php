@@ -101,6 +101,37 @@
                 return false;
             }
         }
+        // get category
+        public function get_cats($id){
+            $this->sql ="SELECT * FROM `category` WHERE cat_id = '$id'";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return $this->result;
+            }else{
+                return false;
+            }
+        }
+        // update category
+        public function update_category($cat_icon,$cat_name,$cat_id ){
+            $this->sql ="UPDATE `category` SET `cat_name`='$cat_name',`cat_icon`='$cat_icon' WHERE cat_id = '$cat_id'";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        // delete category
+        public function delete_category($id){
+            $this->sql ="DELETE FROM `category` WHERE cat_id = '$id'";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return true;
+            }else{
+                return false;
+            }
+        }
 
 
         // close connection
