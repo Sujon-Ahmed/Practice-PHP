@@ -2,6 +2,7 @@
     $page = 'post';
     $sub_page = 'add_post';
     include 'header.php';
+    $cat = $obj->get_cat();
 ?>
     <div id="layoutSidenav_content">
         <main>
@@ -37,24 +38,39 @@
                                 <?php
                             }
                         ?>
-                    <form action="create_category.php" id="post" method="POST" enctype="multipart/form-data">                        
+                    <form action="create_post.php" id="post" method="POST" enctype="multipart/form-data">                        
                             <div class="row">
                                 <div class="col-md-10 m-auto">
                                     
                                     <label for="post_title" class="mt-1">Post Title</label>
-                                    <input type="text" name="post_title" data-parsley-trigger="keyup" data-parsley-minlength="3" class="form-control mb-1 mt-1" placeholder="Post Title" id="post_title" required>
+                                    <input type="text" name="title" data-parsley-trigger="keyup" data-parsley-minlength="3" class="form-control mb-1 mt-1" placeholder="Post Title" id="post_title" required>
 
                                     <label for="cat_name" class="mb-1">Category Name</label>
-                                    <select name="cat_name" class="form-control" required id="cat_name">
+                                    <select name="category_id" class="form-control" required >
                                         <option value="">Select Category</option>
-                                        <option value=""></option>
+                                        <?php
+                                            if($cat->num_rows > 0){
+                                                while($cat_row = $cat->fetch_object()){
+                                                    ?>
+                                                        <option value="<?php echo $cat_row->cat_id; ?>"><?php echo $cat_row->cat_name; ?></option>
+                                                    <?php
+                                                }
+                                            }
+                                        ?>
                                     </select>
 
-                                    <label for="tag" class="mt-1">Tag</label>
-                                    <input type="text" name="tag" class="form-control mb-1 mt-1" placeholder="Post Tag" id="tag" required>
+                                    <div class="form-row mt-3"> 
+                                        <div class="form-group col-md-12">
+                                            <label for="file" class=" mb-1">Post Image</label>
+                                            <input type="file" name="file" id="post-file-img" class="file-control form-control">
+                                        </div>
+                                        <div id="post-test-img" class="form-group col-md-6 mt-3">
+                                            
+                                        </div>
+                                    </div>
 
                                     <label for="post_description" class="mt-1">Post Description</label>
-                                    <textarea name="body" id="description" class="form-control " cols="10" rows="5"></textarea>
+                                    <textarea name="body" id="description" class="form-control " cols="10" rows="5" required></textarea>
                                     
                                                                        
                                     <input type="submit" value="Submit" name="submit" class="btn btn-success btn-block w-100 mt-3 mb-5">

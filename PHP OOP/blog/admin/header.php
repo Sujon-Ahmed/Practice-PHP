@@ -99,7 +99,7 @@
                             </a>
                             <div class="collapse <?php if($page == 'post'){echo 'show';} ?>" id="collapseLayouts2" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link <?php if($sub_page == 'view_post'){echo 'active';} ?>" href="view_post.php">View Category</a>
+                                    <a class="nav-link <?php if($sub_page == 'view_post'){echo 'active';} ?>" href="view_post.php">View Post</a>
                                     <a class="nav-link <?php if($sub_page == 'add_post'){echo 'active';} ?>" href="add_post.php">Create Post</a>
                                 </nav>
                             </div>

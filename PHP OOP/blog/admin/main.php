@@ -133,6 +133,17 @@
             }
         }
 
+        // ============================ post category =====================
+        public function post_create($author_id,$cat_id,$post_title,$post_body,$fileNewName){
+            $this->sql ="INSERT INTO `post`(`author_id`, `category_id`, `post_title`, `post_body`, `post_image`) VALUES ('$author_id','$cat_id','$post_title','$post_body','$fileNewName')";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
 
         // close connection
         public function __destruct()
