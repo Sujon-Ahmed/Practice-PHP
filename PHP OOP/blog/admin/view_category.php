@@ -67,7 +67,7 @@
                                                 <tr>
                                                     <td><?php echo $si; ?></td>
                                                     <td><i class="<?php echo $cat->cat_icon; ?> fa-2x "></i></td>
-                                                    <td class="text-capitalize"><?php echo $cat->cat_name; ?></td>
+                                                    <td class="text-uppercase"><?php echo $cat->cat_name; ?></td>
                                                     <td><?php echo date('M-d-Y h:i A',strtotime($cat->cat_created_at)); ?></td>
                                                     <td>
                                                         <a href="edit_category.php?id=<?php echo $cat->cat_id;?>" class="btn btn-primary btn-sm" title="Edit"><i class="fa fa-edit"></i></a>
