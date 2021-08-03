@@ -135,10 +135,43 @@
 
         // ============================ post category =====================
         public function post_create($author_id,$cat_id,$post_title,$post_body,$fileNewName){
-            $this->sql ="INSERT INTO `post`(`author_id`, `category_id`, `post_title`, `post_body`, `post_image`) VALUES ('$author_id','$cat_id','$post_title','$post_body','$fileNewName')";
+            $this->sql ="INSERT INTO `post`(`author_id`, `category_id`, `post_title`, `post_body`, `post_thumbnail`) VALUES ('$author_id','$cat_id','$post_title','$post_body','$fileNewName')";
             $this->result = $this->con->query($this->sql);
             if($this->result == true){
                 return true;
+            }else{
+                return false;
+            }
+        }
+
+       //get post
+        public function get_post($id){
+            $this->sql = "SELECT * FROM `post` WHERE author_id = '$id' ORDER BY post_id DESC";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return $this->result;
+            }else{
+                return false;
+            }
+        }
+
+        // get id
+        public function get_post_id($id){
+            $this->sql = "SELECT * FROM `post` WHERE post_id = '$id'";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return $this->result;
+            }else{
+                return false;
+            }
+        }
+
+        // delete post 
+        public function delete_post($id){
+            $this->sql = "DELETE FROM `post` WHERE post_id = '$id'";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return $this->result;
             }else{
                 return false;
             }

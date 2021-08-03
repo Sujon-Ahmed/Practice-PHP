@@ -24,7 +24,7 @@
                 $fileError = $_FILES["file"]["error"];
                 if($fileError == 0){
                     $fileNewName = uniqid('',true).'.'.$fileActualExt;
-                    $fileDestination = "uploads/post/".$fileNewName;
+                    $fileDestination = "uploads/posts/".$fileNewName;
                     if(move_uploaded_file($fileTmp,$fileDestination)){
 
                         $status = $obj->post_create($author_id,$cat_id,$post_title,$post_body,$fileNewName);
