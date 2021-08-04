@@ -21,7 +21,7 @@
 	}else{
 		header('location:index.php');
 	}
-	$posts = $obj->get_all_post();
+	// $posts = $obj->get_all_post();
 
 ?>
 

@@ -1,7 +1,22 @@
 <?php
 	include 'font_header.php';
 	$get_category = $obj->get_cat();
-	$posts = $obj->get_all_post();
+	// $posts = $obj->get_all_post();
+
+	// pagination code
+	$num_per_page = 03;
+
+	if(isset($_GET['page'])){
+		$page = $_GET['page'];
+	}else{
+		$page=1;
+	}
+	// echo $page;
+	$start_from = ($page-1)*03;
+	// $sql="select * from employees limit $start_from,$num_per_page";
+	// $rs_result=mysql_query($sql);
+	$posts = $obj->get_all_post($start_from,$num_per_page);
+
 
 ?>
 
@@ -115,26 +130,40 @@
 
 			<!-- PAGINATION -->
 			<div class="pagination">
+				<?php
+					$total_record = $obj->total_data();
+					$total_page = ceil($total_record/$num_per_page);
+				?>
 				<ul class="pagination_ul d-flex">
-					<li>
-						<a href="">
-							<i class="fas fa-chevron-left"></i>
-						</a>
-					</li>
-					<li>
-						<a href="">1</a>
-					</li>
-					<li>
-						<a href="">2</a>
-					</li>
-					<li>
-						<a href="">3</a>
-					</li>
-					<li>
-						<a href="">
-							<i class="fas fa-chevron-right"></i>
-						</a>
-					</li>
+
+					<?php
+
+						if($page>1){
+							?>
+								<li>
+									<a href="index.php?page=<?php echo $page-1;?>">Prev</a>
+								</li>
+							<?php
+						}
+						
+						for($i=1;$i<$total_page;$i++){
+							?>
+								<li>
+									<a href="index.php?page=<?php echo $i; ?>"><?php echo $i; ?></a>
+								</li>
+							<?php
+						}
+
+						if($i>$page){
+							?>
+								<li>
+									<a href="index.php?page=<?php echo $page+1;?>">Next</a>
+								</li>
+							<?php
+						}
+
+					?>
+					
 				</ul>
 			</div>
 			<!-- PAGINATION -->

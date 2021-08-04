@@ -189,10 +189,10 @@
     }
 
         // get all post
-        public function get_all_post(){
+        public function get_all_post($start_from,$num_per_page){
             $this->sql = "SELECT post.*,category.cat_name,user.user_name,user.user_photo FROM post
             JOIN category ON post.category_id = category.cat_id
-            JOIN user ON post.author_id = user.user_id";
+            JOIN user ON post.author_id = user.user_id limit $start_from,$num_per_page";
 
             $this->result = $this->con->query($this->sql);
             if($this->result == true){
@@ -201,6 +201,32 @@
                 return false;
             }
         }
+
+        // // get_all_post_pagination
+        // public function get_all_post_pagination($start_from,$num_per_page){
+        //     $this->sql = "SELECT post.*,category.cat_name,user.user_name,user.user_photo FROM post
+        //     JOIN category ON post.category_id = category.cat_id
+        //     JOIN user ON post.author_id = user.user_id limit $start_from,$num_per_page";
+
+        //     $this->result = $this->con->query($this->sql);
+        //     if($this->result == true){
+        //         return $this->result;
+        //     }else{
+        //         return false;
+        //     }
+        // }
+
+        // total_data
+        public function total_data(){
+            $this->sql = "SELECT * FROM post";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return $this->result->num_rows;
+            }else{
+                return false;
+            }
+        }
+
 
 
         // close connection
