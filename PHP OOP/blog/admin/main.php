@@ -179,20 +179,20 @@
 
         //get_single_post
         public function get_single_post($post_id){
-            $this->sql = "SELECT post.*,category.cat_name,user.user_name,user.user_photo,user.user_about FROM post JOIN category ON post.category_id = category.cat_id JOIN user ON post.author_id = user.user_id";
-            $this->result = $this->con->query($this->sql);
-            if($this->result == true){
-                return $this->result;
-            }else{
-                return false;
-            }
+        $this->sql = "SELECT post.*,category.cat_name,user.user_name,user.user_photo,user.user_about FROM post JOIN category ON post.category_id = category.cat_id JOIN user ON post.author_id = user.user_id WHERE post_id = '$post_id'";
+        $this->result = $this->con->query($this->sql);
+        if($this->result == true){
+            return $this->result;
+        }else{
+            return false;
         }
+    }
 
         // get all post
         public function get_all_post(){
             $this->sql = "SELECT post.*,category.cat_name,user.user_name,user.user_photo FROM post
             JOIN category ON post.category_id = category.cat_id
-            JOIN user on post.author_id = user.user_id";
+            JOIN user ON post.author_id = user.user_id";
 
             $this->result = $this->con->query($this->sql);
             if($this->result == true){

@@ -43,7 +43,7 @@
 									<div class="menu_right_list">
 										<ul class="menu_right_ul d-flex">
 											<li class="dis_fx_cntr">
-												<a href="home.html">HOME</a>
+												<a href="index.php">HOME</a>
 											</li>
 											<li>
 												<a href="gallery.html">gallery</a>

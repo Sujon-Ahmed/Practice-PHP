@@ -26,18 +26,23 @@
                 $("#file-img").change(function () {
                     filePreview(this);
             });
+            </script>
+            
         
-            // parsley for profile
+
+        <script>
+
+        // parsley for profile
             $(function(){
                 $('#profile').parsley();
             });
       
-      // parsley for change password
+        // parsley for change password
             $(function(){
                 $('#change_password').parsley();
             });
     
-       // parsley for create category
+        // parsley for create category
             $(function(){
                 $('#create_category').parsley();
             });

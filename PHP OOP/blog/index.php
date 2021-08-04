@@ -94,10 +94,7 @@
 																<a href="contact_me.html"><p class="author_name"><?php echo $post->user_name; ?></p></a>
 																	<ul class="home_card_btm_r8_ul">
 																		<li>
-																			<?php  
-																				$time = $post->post_created_at;
-																				echo date('M-d-Y h:I A',strtotime($time));
-																			?>
+																			<?php echo date('M-d-Y h:i A',strtotime($post->post_created_at)); ?>
 																		</li>
 																	</ul>
 																</div>

@@ -2,6 +2,7 @@
     $page = 'post';
     // $sub_page = 'view_post';
     include 'header.php';
+
     if(isset($_GET['id'])){
         $post_id = $_GET['id'];
         $posts = $obj->get_single_post($post_id);
@@ -22,13 +23,13 @@
             <div class="container-fluid px-4">
                 <h1 class="mt-4">Dashboard</h1>
                 <ol class="breadcrumb mb-4">
-                    <li class="breadcrumb-item active">Dashboard / post / details</li>
+                    <li class="breadcrumb-item active">Dashboard/post/details</li>
                 </ol>
                 <div class="card mb-4">
                     <div class="card-header d-flex justify-content-between">
                         <div class="mt-2">
-                            <i class="fas fa-eye me-1"></i>
-                            Post Details
+                            <i class="fas fa-table me-1"></i>
+                            View post
                         </div>
                         <div>
                             <a href="view_post.php" class="btn btn-primary"><i class="fas fa-eye me-1"></i>View</a>
