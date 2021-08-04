@@ -12,8 +12,9 @@
         <!-- form validation -->
         <script src="js/additional-methods.min.js"></script>
         <script src="js/jquery.validate.min.js"></script>
+
         <script>
-            function filePreview(input) {
+            function profilePreview(input) {
                 if (input.files && input.files[0]) {
                     var reader = new FileReader();
                     reader.onload = function (e) {
@@ -24,9 +25,9 @@
                 }
                 }
                 $("#file-img").change(function () {
-                    filePreview(this);
+                    profilePreview(this);
             });
-            </script>
+        </script>
             
         
 
@@ -81,7 +82,7 @@
                         title: {
                             required: true,
                         },
-                        catagory_id: {
+                        category_id: {
                             required: true,
                         },
                         tag: {
@@ -93,7 +94,7 @@
                         title: {
                         required: "Please Enter Post Title",
                       },
-                      catagory_id: {
+                      category_id: {
                         required: "Please Select Category",
                       },
                       tag: {
