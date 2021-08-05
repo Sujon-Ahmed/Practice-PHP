@@ -1,22 +1,11 @@
 <?php
 	include 'font_header.php';
 	$get_category = $obj->get_cat();
-	// $posts = $obj->get_all_post();
 
-	// pagination code
-	$num_per_page = 03;
-
-	if(isset($_GET['page'])){
-		$page = $_GET['page'];
-	}else{
-		$page=1;
-	}
-	// echo $page;
-	$start_from = ($page-1)*03;
-	// $sql="select * from employees limit $start_from,$num_per_page";
-	// $rs_result=mysql_query($sql);
-	$posts = $obj->get_all_post($start_from,$num_per_page);
-
+    if(isset($_GET['id'])){
+        $cat_id = $_GET['id'];
+        $posts = $obj->get_all_cat_wise_post($cat_id);
+    }
 
 ?>
 
@@ -121,54 +110,15 @@
 										</div>
 									<?php
 								}
+							}else{
+								echo "NO POST AVAILABLE IN THIS CATEGORY";
 							}
 						?>
 						
 					</div>
 				</div>
 			</div>
-
-			<!-- PAGINATION -->
-			<div class="pagination">
-				<?php
-					$total_record = $obj->total_data();
-					$total_page = ceil($total_record/$num_per_page);
-				?>
-				<ul class="pagination_ul d-flex">
-
-					<?php
-
-						if($page>1){
-							?>
-								<li>
-									<a href="index.php?page=<?php echo $page-1;?>">Prev</a>
-								</li>
-							<?php
-						}
-						
-						for($i=1;$i<$total_page;$i++){
-							?>
-								<li>
-									<a class="<?php if($i == $page){echo 'active';} ?>" href="index.php?page=<?php echo $i; ?>"><?php echo $i; ?></a>
-								</li>
-							<?php
-						}
-
-						if($i>$page){
-							?>
-								<li>
-									<a href="index.php?page=<?php echo $page+1;?>">Next</a>
-								</li>
-							<?php
-						}
-
-					?>
-					
-				</ul>
-			</div>
-			<!-- PAGINATION -->
-		</div>
-		<!-- BODY -->
+			
 <?php
 	include 'font_footer.php';
 ?>

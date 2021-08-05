@@ -1,5 +1,6 @@
 <?php
 	include 'font_header.php';
+	$get_category = $obj->get_cat();
 	if(isset($_GET['id'])){
 		$post_id = $_GET['id'];
 		$posts = $obj->get_single_post($post_id);
@@ -122,21 +123,21 @@
 									if($related_post->num_rows > 0){
 										while($related_cat = $related_post->fetch_object()){
 											if($related_cat->post_id != $post_id){
-											?>
-												<div class="blog_post_r8_item">
-													<div class="blog_post_item_lft">
-														<img src="<?php echo 'admin/uploads/posts/'.$related_cat->post_thumbnail ?>" alt="image">
+												?>
+													<div class="blog_post_r8_item">
+														<div class="blog_post_item_lft">
+															<img src="<?php echo 'admin/uploads/posts/'.$related_cat->post_thumbnail ?>" alt="image">
+														</div>
+														<div class="blog_post_item_r8">
+															<a href="blog_post.php?id=<?php echo $related_cat->post_id; ?>">
+																<h4 class="blog_post_item_r8_h4">
+																	<?php echo $related_cat->post_title ?>
+																</h4>
+															</a>
+															<a href=""><p class="author_name2"></p></a>
+														</div>
 													</div>
-													<div class="blog_post_item_r8">
-														<a href="blog_post.php?id=<?php echo $related_cat->post_id; ?>">
-															<h4 class="blog_post_item_r8_h4">
-																<?php echo $related_cat->post_title ?>
-															</h4>
-														</a>
-														<a href=""><p class="author_name2"></p></a>
-													</div>
-												</div>
-											<?php
+												<?php
 												
 											}
 										}
@@ -194,29 +195,20 @@
 								</div>
 							</div>
 							<div class="post_tags">
-								<h3 class="post_tags_h3">Popular Tags</h3>
+								<h3 class="post_tags_h3">Popular Category</h3>
 								<ul class="post_tags_ul">
-									<li>
-										<a href="">Design</a>
-									</li>
-									<li>
-										<a href="">UI/UX</a>
-									</li>
-									<li>
-										<a href="">Database</a>
-									</li>
-									<li>
-										<a href="">PHP</a>
-									</li>
-									<li>
-										<a href="">Lareval</a>
-									</li>
-									<li>
-										<a href="">UI/UX</a>
-									</li>
-									<li>
-										<a href="">Design</a>
-									</li>
+									<?php
+										if($get_category->num_rows > 0){
+											while($category = $get_category->fetch_object()){
+												?>
+													<li>
+														<a href="cat_wise_post.php?id=<?php echo $category->cat_id; ?>"><?php echo $category->cat_name; ?></a>
+													</li>
+												<?php
+											}
+										}
+									?>
+									
 								</ul>
 							</div>
 						</div>
