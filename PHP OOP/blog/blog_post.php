@@ -7,6 +7,7 @@
 		if($posts->num_rows > 0){
 			while($post = $posts->fetch_object()){
 				$category_name = $post->cat_name;
+				$cat_id = $post->cat_id;
 				$title = $post->post_title;
 				$author_name = $post->user_name;
 				$time = $post->post_created_at;
@@ -17,6 +18,8 @@
 				
 			}
 		}
+
+		$related_post = $obj->related($cat_id);
 
 	}else{
 		header('location:index.php');
@@ -112,102 +115,33 @@
 					</div>
 					<div class="col-12 col-md-12 col-lg-3">
 						<div class="blog_post_r8">
-								<h4 class="trnd_artcl_h4">TRENDING ARTICLES</h4>
+								<h4 class="trnd_artcl_h4">RELATED ARTICLES</h4>
 							<div class="blog_post_r8_all">
 								<!-- iteam -->
-								<div class="blog_post_r8_item">
-									<div class="blog_post_item_lft">
-										<img src="img/man3.jpg" alt="image">
-									</div>
-									<div class="blog_post_item_r8">
-										<a href="">
-											<h4 class="blog_post_item_r8_h4">
-												The Upwork 100: 3 Things You May Have Missed
-											</h4>
-										</a>
-										<a href=""><p class="author_name2">-Amy Sept</p></a>
-									</div>
-								</div>
-								<!-- iteam -->
-
-									<!-- iteam -->
-								<div class="blog_post_r8_item">
-									<div class="blog_post_item_lft">
-										<img src="img/man2.jpg" alt="image">
-									</div>
-									<div class="blog_post_item_r8">
-										<a href="">
-											<h4 class="blog_post_item_r8_h4">
-												The Upwork 100: 3 Things You May Have Missed
-											</h4>
-										</a>
-										<a href=""><p class="author_name2">-Amy Sept</p></a>
-									</div>
-								</div>
-								<!-- iteam -->
-
-									<!-- iteam -->
-								<div class="blog_post_r8_item">
-									<div class="blog_post_item_lft">
-										<img src="img/man3.jpg" alt="image">
-									</div>
-									<div class="blog_post_item_r8">
-										<a href="">
-											<h4 class="blog_post_item_r8_h4">
-												The Upwork 100: 3 Things You May Have Missed
-											</h4>
-										</a>
-										<a href=""><p class="author_name2">-Amy Sept</p></a>
-									</div>
-								</div>
-								<!-- iteam -->
-
-									<!-- iteam -->
-								<div class="blog_post_r8_item">
-									<div class="blog_post_item_lft">
-										<img src="img/man4.jpg" alt="image">
-									</div>
-									<div class="blog_post_item_r8">
-										<a href="">
-											<h4 class="blog_post_item_r8_h4">
-												The Upwork 100: 3 Things You May Have Missed
-											</h4>
-										</a>
-										<a href=""><p class="author_name2">-Amy Sept</p></a>
-									</div>
-								</div>
-								<!-- iteam -->
-
-									<!-- iteam -->
-								<div class="blog_post_r8_item">
-									<div class="blog_post_item_lft">
-										<img src="img/man3.jpg" alt="image">
-									</div>
-									<div class="blog_post_item_r8">
-										<a href="">
-											<h4 class="blog_post_item_r8_h4">
-												The Upwork 100: 3 Things You May Have Missed
-											</h4>
-										</a>
-										<a href=""><p class="author_name2">-Amy Sept</p></a>
-									</div>
-								</div>
-								<!-- iteam -->
-
-									<!-- iteam -->
-								<div class="blog_post_r8_item">
-									<div class="blog_post_item_lft">
-										<img src="img/man4.jpg" alt="image">
-									</div>
-									<div class="blog_post_item_r8">
-										<a href="">
-											<h4 class="blog_post_item_r8_h4">
-												The Upwork 100: 3 Things You May Have Missed
-											</h4>
-										</a>
-										<a href=""><p class="author_name2">-Amy Sept</p></a>
-									</div>
-								</div>
+								<?php
+									if($related_post->num_rows > 0){
+										while($related_cat = $related_post->fetch_object()){
+											if($related_cat->post_id != $post_id){
+											?>
+												<div class="blog_post_r8_item">
+													<div class="blog_post_item_lft">
+														<img src="<?php echo 'admin/uploads/posts/'.$related_cat->post_thumbnail ?>" alt="image">
+													</div>
+													<div class="blog_post_item_r8">
+														<a href="blog_post.php?id=<?php echo $related_cat->post_id; ?>">
+															<h4 class="blog_post_item_r8_h4">
+																<?php echo $related_cat->post_title ?>
+															</h4>
+														</a>
+														<a href=""><p class="author_name2"></p></a>
+													</div>
+												</div>
+											<?php
+												
+											}
+										}
+									}
+								?>
 								<!-- iteam -->
 							</div>
 							<div class="course_price mar_t60">
