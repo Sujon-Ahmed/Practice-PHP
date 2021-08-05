@@ -20,6 +20,14 @@
 		  <!-- RESPONSIVE CSS -->
 		<link rel="stylesheet" href="assets/css/responsive.css" />	
 
+		<style>
+			ul li a.active{
+				border: 1px solid transparent;
+				color: white;
+    			background-color: #204ecf;
+			}
+		</style>
+
 	</head>
 
 	<body>
@@ -31,7 +39,7 @@
 						<div class="row align-items-center">
 							<div class="col-4 col-md-4 col-lg-4">
 								<div class="logo">
-									<a href="home.html">
+									<a href="index.php">
 										<div class="logo_img">
 											<img src="img/logo.png" alt="image">
 										</div>

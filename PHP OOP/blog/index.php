@@ -149,7 +149,7 @@
 						for($i=1;$i<$total_page;$i++){
 							?>
 								<li>
-									<a href="index.php?page=<?php echo $i; ?>"><?php echo $i; ?></a>
+									<a class="<?php if($i == $page){echo 'active';} ?>" href="index.php?page=<?php echo $i; ?>"><?php echo $i; ?></a>
 								</li>
 							<?php
 						}

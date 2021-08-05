@@ -6,6 +6,7 @@ p{
 }
 /*Menu Start*/ 
 
+
 .menu_all {
     background: #fff;
     z-index: 10;
@@ -169,7 +170,7 @@ p{
     margin-bottom: 70px;
 }
 .latest_post_top h1{}
-.{}
+
 .categorie_top_h1{}
 .categorie_top_p{}
 .categorie_top {
@@ -335,7 +336,7 @@ p{
     border-radius: 50%;
     left: -4px;
 }
-.{}
+
 .home_card:hover {
     box-shadow: 0 4px 5px rgba(0,0,0,.16);
   /*  border: 1px solid rgba(32,78,207,.3);*/
@@ -344,12 +345,7 @@ p{
 .home_card:hover .home_card_top:after {
     visibility: visible;
 }
-.{}
-.{}
-.{}
-.{}
-.{}
-.{}
+
 /*HOME*/
 
 /*FOOTER*/
@@ -425,15 +421,14 @@ p{
   
 }
 .footer_section_social_ul li a i{}
-.{}
-.{}
+
 /*FOOTER*/
 
 /*BLOG START*/
 .blog_all{
     padding-bottom: 30px;
 }
-.{}
+
 .catagori_name_h2{
     margin-bottom: 20px;
     font-size: 31px;
@@ -733,10 +728,7 @@ p{
     color: #636161;
     margin-top: 2px;
 }
-.{}
-.{}
-.{}
-.{}
+
 .course_price_top {
     background: #000;
     text-align: center;
@@ -988,9 +980,7 @@ p{
     margin-bottom: 10px;
     list-style: lower-alpha;
 }
-.{}
-.{}
-.{}
+
 /*ABOUT US END*/
 
 /*CONTACT ME*/
@@ -1133,7 +1123,7 @@ p{
 }
 .post_que_ul{}
 .post_que_ul li{}
-.{}
+
 .post_que_single {
     border-bottom: 1px solid #eae4e4;
     padding: 30px 0px 0px;
