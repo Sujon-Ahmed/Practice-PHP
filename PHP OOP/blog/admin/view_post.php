@@ -4,6 +4,8 @@
     include 'header.php';
     $author_id = $_SESSION['id'];
     $post_data = $obj->get_post($author_id);
+
+  
 ?>
     <div id="layoutSidenav_content">
         <main>
@@ -44,15 +46,18 @@
                                 <tr>
                                     <th>SI</th>
                                     <th>Post Title</th>
+                                    <th>Cat_Name</th>
                                     <th>Post Image</th>
                                     <th>Created_at</th>
                                     <th>Action</th>
                                 </tr>
+                               
                             </thead>
                             <tfoot>
                                 <tr>
                                     <th>SI</th>
                                     <th>Post Title</th>
+                                    <th>Cat_Name</th>
                                     <th>Post Image</th>
                                     <th>Created_at</th>
                                     <th>Action</th>
@@ -67,6 +72,8 @@
                                                 <tr>
                                                     <td><?php echo $si; ?></td>
                                                     <td><?php echo $post->post_title; ?></td>
+                                                    <td><?php echo $post->cat_name; ?></td>
+                                                    
                                                     <td>
                                                         <a href="<?php echo 'uploads/post/'.$post->post_thumbnail; ?>" target="_blank">
                                                         <img class="img-fluid" src="<?php echo 'uploads/posts/'.$post->post_thumbnail; ?>" width="150" height="150" alt="">

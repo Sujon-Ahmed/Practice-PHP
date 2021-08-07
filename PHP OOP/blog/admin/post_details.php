@@ -32,7 +32,8 @@
                             View post
                         </div>
                         <div>
-                            <a href="view_post.php" class="btn btn-primary"><i class="fas fa-eye me-1"></i>View</a>
+                            <a href="edit_post.php?id=<?php echo $_GET['id']; ?>" class="btn btn-primary"><i class="fas fa-edit me-1"></i>Edit</a>
+                            <a href="view_post.php" class="btn btn-success"><i class="fas fa-eye me-1"></i>View</a>
                         </div>
                     </div>
                     <div class="card-body">

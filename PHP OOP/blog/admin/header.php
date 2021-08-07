@@ -79,6 +79,7 @@
 
                             <div class="sb-sidenav-menu-heading">Interface</div>
 
+                            <!-- manage category -->
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Manage Category
@@ -101,6 +102,19 @@
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link <?php if($sub_page == 'view_post'){echo 'active';} ?>" href="view_post.php">View Post</a>
                                     <a class="nav-link <?php if($sub_page == 'add_post'){echo 'active';} ?>" href="add_post.php">Create Post</a>
+                                </nav>
+                            </div>
+
+                             <!-- manage gallery -->
+                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts3" aria-expanded="false" aria-controls="collapseLayouts3">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Manage Gallery
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse <?php if($page == 'gallery'){echo 'show';} ?>" id="collapseLayouts3" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link <?php if($sub_page == 'view_image'){echo 'active';} ?>" href="view_image.php">View Image</a>
+                                    <a class="nav-link <?php if($sub_page == 'add_image'){echo 'active';} ?>" href="add_image.php">Add Image</a>
                                 </nav>
                             </div>
         

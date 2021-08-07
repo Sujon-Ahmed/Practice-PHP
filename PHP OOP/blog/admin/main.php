@@ -146,7 +146,9 @@
 
        //get post
         public function get_post($id){
-            $this->sql = "SELECT * FROM `post` WHERE author_id = '$id' ORDER BY post_id DESC";
+            $this->sql = "SELECT post.*,category.cat_name,user.user_name,user.user_photo FROM post
+            JOIN category ON post.category_id = category.cat_id
+            JOIN user ON post.author_id = user.user_id WHERE author_id = '$id' ORDER BY post_id DESC";
             $this->result = $this->con->query($this->sql);
             if($this->result == true){
                 return $this->result;
@@ -249,6 +251,34 @@
                 return $this->result->num_rows;
             }else{
                 return false;
+            }
+        }
+
+         // update with photo
+         public function update_with_photo_post($author_id,$cat_id,$post_title,$post_body,$fileNewName,$post_id) {
+            $this->sql = "UPDATE `post` SET `author_id`='$author_id',`category_id`='$cat_id',`post_title`='$post_title',`post_body`='$post_body',`post_thumbnail`='$fileNewName' WHERE post_id = '$post_id'";
+
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true) {
+                return true;
+                // echo 'OK';
+            }else{
+                return false;
+                // echo 'ERROR';
+            }
+        }
+
+        // update without photo
+        public function update_with_out_photo_post($author_id,$cat_id,$post_title,$post_body,$oldphoto,$post_id) {
+            $this->sql = "UPDATE `post` SET `author_id`='$author_id',`category_id`='$cat_id',`post_title`='$post_title',`post_body`='$post_body',`post_thumbnail`='$oldphoto' WHERE post_id = '$post_id'";
+
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true) {
+                return true;
+                // echo 'OK';
+            }else{
+                return false;
+                // echo 'ERROR';
             }
         }
 

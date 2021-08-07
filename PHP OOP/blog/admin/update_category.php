@@ -13,7 +13,7 @@
 
         if(trim($cat_icon) == '' || trim($cat_name) == ''){
             Flash_data::error("All Field Are Required");
-            header('location:edit.php?id='.$cat_id);
+            header('location:edit_category.php?id='.$cat_id);
         }else{
             $status = $obj->update_category($cat_icon,$cat_name,$cat_id );
 
