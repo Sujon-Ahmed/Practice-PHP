@@ -54,7 +54,7 @@
 												<a href="index.php">HOME</a>
 											</li>
 											<li>
-												<a href="gallery.html">gallery</a>
+												<a href="gallery.php">gallery</a>
 											</li>
 											<li>
 												<a href="about_us.html">about</a>

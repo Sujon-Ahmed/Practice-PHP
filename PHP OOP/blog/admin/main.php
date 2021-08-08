@@ -282,12 +282,62 @@
             }
         }
 
+        // ====================== gallery section =======================
+
+        // add gallery
+        public function add_image($fileNewName){
+            $this->sql = "INSERT INTO `gallery`(`gal_image`) VALUES ('$fileNewName')";
+
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        public function get_img($img_id){
+            $this->sql ="SELECT * FROM `gallery`";
+
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return $this->result;
+            }else{
+                return false;
+            }
+        }
+
+
+        // get img
+        public function get_img_id($img_id){
+            $this->sql = "SELECT * FROM `gallery` WHERE img_id = '$img_id'";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return $this->result;
+            }else{
+                return false;
+            }
+        }
+
+        // delete img
+
+        public function delete_gal_img($img_id){
+            $this->sql = "DELETE FROM `gallery` WHERE img_id = '$img_id'";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return $this->result;
+            }else{
+                return false;
+            }
+        }
+
 
 
         // close connection
         public function __destruct()
         {
             $this->con->close();
+            
         }
 
 

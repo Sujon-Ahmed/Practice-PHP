@@ -27,7 +27,7 @@
 						<div class="row align-items-center">
 							<div class="col-4 col-md-4 col-lg-4">
 								<div class="logo">
-									<a href="home.html">
+									<a href="index.php">
 										<div class="logo_img">
 											<img src="img/logo.png" alt="image">
 										</div>
@@ -39,10 +39,10 @@
 									<div class="menu_right_list">
 										<ul class="menu_right_ul d-flex">
 											<li class="dis_fx_cntr">
-												<a href="home.html">HOME</a>
+												<a href="index.php">HOME</a>
 											</li>
 											<li>
-												<a href="gallery.html">gallery</a>
+												<a href="gallery.php">gallery</a>
 											</li>
 											<li>
 												<a href="about_us.html">about</a>
@@ -116,106 +116,8 @@
 							</div>
 						</div>
 					</div>
-						<!-- CARD -->
-							<!-- CARD -->
-					<div class="col-12 col-md-4 col-lg-4">
-						<div class="gallery_card_main">
-							<div class="gallery_card">
-								<img src="img/blog3.jpg">
-							</div>
-						</div>
-					</div>
-						<!-- CARD -->
-							<!-- CARD -->
-					<div class="col-12 col-md-4 col-lg-4">
-						<div class="gallery_card_main">
-							<div class="gallery_card">
-								<img src="img/blog3.jpg">
-							</div>
-						</div>
-					</div>
-						<!-- CARD -->
-							<!-- CARD -->
-					<div class="col-12 col-md-4 col-lg-4">
-						<div class="gallery_card_main">
-							<div class="gallery_card">
-								<img src="img/blog3.jpg">
-							</div>
-						</div>
-					</div>
-						<!-- CARD -->
-							<!-- CARD -->
-					<div class="col-12 col-md-4 col-lg-4">
-						<div class="gallery_card_main">
-							<div class="gallery_card">
-								<img src="img/blog3.jpg">
-							</div>
-						</div>
-					</div>
-						<!-- CARD -->
-							<!-- CARD -->
-					<div class="col-12 col-md-4 col-lg-4">
-						<div class="gallery_card_main">
-							<div class="gallery_card">
-								<img src="img/blog3.jpg">
-							</div>
-						</div>
-					</div>
-						<!-- CARD -->
-							<!-- CARD -->
-					<div class="col-12 col-md-4 col-lg-4">
-						<div class="gallery_card_main">
-							<div class="gallery_card">
-								<img src="img/blog3.jpg">
-							</div>
-						</div>
-					</div>
-						<!-- CARD -->
-							<!-- CARD -->
-					<div class="col-12 col-md-4 col-lg-4">
-						<div class="gallery_card_main">
-							<div class="gallery_card">
-								<img src="img/blog3.jpg">
-							</div>
-						</div>
-					</div>
-						<!-- CARD -->
-							<!-- CARD -->
-					<div class="col-12 col-md-4 col-lg-4">
-						<div class="gallery_card_main">
-							<div class="gallery_card">
-								<img src="img/blog3.jpg">
-							</div>
-						</div>
-					</div>
-						<!-- CARD -->
-							<!-- CARD -->
-					<div class="col-12 col-md-4 col-lg-4">
-						<div class="gallery_card_main">
-							<div class="gallery_card">
-								<img src="img/blog3.jpg">
-							</div>
-						</div>
-					</div>
-						<!-- CARD -->
-							<!-- CARD -->
-					<div class="col-12 col-md-4 col-lg-4">
-						<div class="gallery_card_main">
-							<div class="gallery_card">
-								<img src="img/blog3.jpg">
-							</div>
-						</div>
-					</div>
-						<!-- CARD -->
-							<!-- CARD -->
-					<div class="col-12 col-md-4 col-lg-4">
-						<div class="gallery_card_main">
-							<div class="gallery_card">
-								<img src="img/blog3.jpg">
-							</div>
-						</div>
-					</div>
-						<!-- CARD -->
+					<!-- CARD -->
+					
 				</div>
 			</div>
 		</div>

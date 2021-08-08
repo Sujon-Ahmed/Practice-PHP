@@ -65,6 +65,22 @@
                     filePreview(this);
                 });
         </script>
+
+        <script>
+            function imgPreview(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                    $('#add_image + img').remove();
+                    $('#test_img').html('<img class="img-fluid img-thumbnail" src="'+e.target.result+'" width="400px" height="auto" />');
+                }
+                reader.readAsDataURL(input.files[0]);
+                }
+                }
+                $("#add_img").change(function () {
+                    imgPreview(this);
+                });
+        </script>
       
         <script>
             // post description
