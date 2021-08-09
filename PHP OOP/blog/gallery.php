@@ -1,3 +1,9 @@
+<?php
+	include 'admin/main.php';
+	$obj = new Main();
+
+	$gallery_image = $obj->get_img();
+?>
 <!DOCTYPE HTML>
 <html lang="zxx">
 	<head>
@@ -109,19 +115,28 @@
 			<div class="container">
 				<div class="row">
 						<!-- CARD -->
-					<div class="col-12 col-md-4 col-lg-4">
-						<div class="gallery_card_main">
-							<div class="gallery_card">
-								<img src="img/blog3.jpg">
-							</div>
-						</div>
-					</div>
+						<?php 
+							if($gallery_image->num_rows > 0){
+								while($all_image = $gallery_image->fetch_object()){
+									?>
+										<div class="col-12 col-md-4 col-lg-4">
+											<div class="gallery_card_main">
+												<div class="gallery_card">
+													<a href="<?php echo 'admin/uploads/gallery/'.$all_image->gal_image;?>"><img src="<?php echo 'admin/uploads/gallery/'.$all_image->gal_image;?>"></a>
+												</div>
+											</div>
+										</div>
+									<?php
+								}
+							}
+						?>
 					<!-- CARD -->
-					
 				</div>
 			</div>
 		</div>
 		<!-- BODY -->
+
+		
 
 	
 		<!-- FOOTER -->
