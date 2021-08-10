@@ -1,8 +1,18 @@
 <?php
 	include 'admin/main.php';
 	$obj = new Main();
+	// pagination code
+	$num_per_page = 12;
 
-	$gallery_image = $obj->get_img();
+	if(isset($_GET['page'])){
+		$page = $_GET['page'];
+	}else{
+		$page=1;
+	}
+	// echo $page;
+	$start_from = ($page-1)*12;
+
+	$gallery_image = $obj->get_img($start_from,$num_per_page);
 ?>
 <!DOCTYPE HTML>
 <html lang="zxx">
@@ -133,6 +143,45 @@
 					<!-- CARD -->
 				</div>
 			</div>
+			<!-- PAGINATION -->
+		<div class="pagination">
+			<?php
+				$total_image = $obj->total_img();
+				$total_page = ceil($total_image/$num_per_page);
+			?>
+			<ul class="pagination_ul d-flex">
+
+				<?php
+
+					if($page>1){
+						?>
+							<li>
+								<a href="gallery.php?page=<?php echo $page-1;?>">Prev</a>
+							</li>
+						<?php
+					}
+					
+					for($i=1;$i<$total_page;$i++){
+						?>
+							<li>
+								<a class="<?php if($i == $page){echo 'active';} ?>" href="gallery.php?page=<?php echo $i; ?>"><?php echo $i; ?></a>
+							</li>
+						<?php
+					}
+
+					if($i>$page){
+						?>
+							<li>
+								<a href="gallery.php?page=<?php echo $page+1;?>">Next</a>
+							</li>
+						<?php
+					}
+
+				?>
+				
+			</ul>
+		</div>
+		<!-- PAGINATION -->
 		</div>
 		<!-- BODY -->
 

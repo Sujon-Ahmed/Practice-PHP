@@ -4,7 +4,7 @@
 	// $posts = $obj->get_all_post();
 
 	// pagination code
-	$num_per_page = 03;
+	$num_per_page = 06;
 
 	if(isset($_GET['page'])){
 		$page = $_GET['page'];
@@ -12,7 +12,7 @@
 		$page=1;
 	}
 	// echo $page;
-	$start_from = ($page-1)*03;
+	$start_from = ($page-1)*06;
 	// $sql="select * from employees limit $start_from,$num_per_page";
 	// $rs_result=mysql_query($sql);
 	$posts = $obj->get_all_post($start_from,$num_per_page);

@@ -2,8 +2,8 @@
     $page = 'gallery';
     $sub_page = 'view_image';
     include 'header.php';
-    $img_id = $_SESSION['id'];
-    $gallery_data = $obj->get_img($img_id);
+    $id = $_SESSION['id'];
+    $gallery_data = $obj->get_image($id);
 
   
 ?>

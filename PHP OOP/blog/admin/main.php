@@ -205,7 +205,7 @@
         public function get_all_post($start_from,$num_per_page){
             $this->sql = "SELECT post.*,category.cat_name,user.user_name,user.user_photo FROM post
             JOIN category ON post.category_id = category.cat_id
-            JOIN user ON post.author_id = user.user_id limit $start_from,$num_per_page";
+            JOIN user ON post.author_id = user.user_id ORDER BY post_id DESC limit $start_from,$num_per_page";
 
             $this->result = $this->con->query($this->sql);
             if($this->result == true){
@@ -281,9 +281,19 @@
                 return false;
             }
         }
+         //get post
+         public function get_image($id){
+            $this->sql = "SELECT * FROM gallery ORDER BY img_id DESC";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return $this->result;
+            }else{
+                return false;
+            }
+        }
 
-        public function get_img(){
-            $this->sql ="SELECT * FROM `gallery`";
+        public function get_img($start_from,$num_per_page){
+            $this->sql ="SELECT * FROM `gallery` ORDER BY img_id DESC limit $start_from,$num_per_page";
 
             $this->result = $this->con->query($this->sql);
             if($this->result == true){
@@ -312,6 +322,17 @@
             $this->result = $this->con->query($this->sql);
             if($this->result == true){
                 return $this->result;
+            }else{
+                return false;
+            }
+        }
+
+        // total image
+        public function total_img(){
+            $this->sql = "SELECT * FROM gallery";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return $this->result->num_rows;
             }else{
                 return false;
             }
