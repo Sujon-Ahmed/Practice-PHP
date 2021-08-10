@@ -271,8 +271,8 @@
         // ====================== gallery section =======================
 
         // add gallery
-        public function add_image($fileNewName){
-            $this->sql = "INSERT INTO `gallery`(`gal_image`) VALUES ('$fileNewName')";
+        public function add_image($fileNewName,$auth_id){
+            $this->sql = "INSERT INTO `gallery`(`auth_id`, `gal_image`) VALUES ('$auth_id','$fileNewName')";
 
             $this->result = $this->con->query($this->sql);
             if($this->result == true){
@@ -283,7 +283,7 @@
         }
          //get post
          public function get_image($id){
-            $this->sql = "SELECT * FROM gallery ORDER BY img_id DESC";
+            $this->sql = "SELECT * FROM gallery WHERE auth_id = '$id' ORDER BY img_id DESC";
             $this->result = $this->con->query($this->sql);
             if($this->result == true){
                 return $this->result;

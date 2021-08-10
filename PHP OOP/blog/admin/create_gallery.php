@@ -3,6 +3,8 @@
     include 'main.php';
     include 'flash_data.php';
     $obj = new Main();
+    $auth_id = $_SESSION['id'];
+    
 
     if(!isset($_POST['submit'])){
         header('location:add_image.php');
@@ -22,7 +24,7 @@
                     $fileDestination = "uploads/gallery/".$fileNewName;
                     if(move_uploaded_file($fileTmp,$fileDestination)){
 
-                        $status = $obj->add_image($fileNewName);
+                        $status = $obj->add_image($fileNewName,$auth_id);
 
                         if($status == true){
                             Flash_data::success("Image Add SuccessFully");
