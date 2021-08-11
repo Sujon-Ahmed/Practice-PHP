@@ -27,7 +27,7 @@
 						<div class="row align-items-center">
 							<div class="col-4 col-md-4 col-lg-4">
 								<div class="logo">
-									<a href="home.html">
+									<a href="index.php">
 										<div class="logo_img">
 											<img src="img/logo.png" alt="image">
 										</div>
@@ -39,17 +39,17 @@
 									<div class="menu_right_list">
 										<ul class="menu_right_ul d-flex">
 											<li class="dis_fx_cntr">
-												<a href="home.html">HOME</a>
+												<a href="index.php">HOME</a>
 											</li>
 											<li>
-												<a href="gallery.html">gallery</a>
+												<a href="gallery.php">gallery</a>
 											</li>
 											<li>
 												<a href="about_us.html">about</a>
 											</li>
 											
 											<li>
-												<a href="contact.html">CONTACT</a>
+												<a href="contact.php">CONTACT</a>
 											</li>
 											<li>
 												<a href="contact_me.html">author</a>
@@ -109,34 +109,37 @@
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-12 col-md-8 col-lg-5">
-						<div class="cmnt_frm">
+						<form action="message.php" method="POST">
+							<div class="cmnt_frm">
 									<h2 class="post_dtls_title2 pad_b20" style=" text-align: center;font-size: 28px;">Contact Me</h2>
 								<div class="cmnt_frm_all">
 									<div class="row">
 										<div class="col-12 col-md-12 col-lg-12">
 											<div class="cmnt_input">
 												<p>NAME</p>
-												<input type="text" placeholder="Enter your name">
+												<input type="text" name="name" placeholder="Enter your name" required="">
 											</div>
 										</div>
 										<div class="col-12 col-md-12 col-lg-12">
 											<div class="cmnt_input">
 												<p>E-MAIL</p>
-												<input type="text" placeholder="Enter your E-MAIL">
+												<input type="email" name="email" placeholder="Enter your E-MAIL" required="">
 											</div>
 										</div>
 										<div class="col-12 col-md-12 col-lg-12">
 											<div class="cmnt_input">
 												<p class="mar_b10">MESSAGE</p>
-												<textarea placeholder="Type your comment" name="message" required=""></textarea>
+												<textarea name="msg" placeholder="Type your comment" name="message" required=""></textarea>
 											</div>
 										</div>
-										<div class="dtls_frm_btn mar_t20">
-											<button class="btn1">send me</button>
+										<div class="w-100 d-block">
+											<input type="submit" name="submit" class="btn btn-primary w-100 d-block" value="Send Me">
+											<!-- <button class="btn1">send me</button> -->
 										</div>
 									</div>
 								</div>
 							</div>
+						</form>
 					</div>
 				</div>
 			</div>

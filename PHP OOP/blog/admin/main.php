@@ -338,6 +338,19 @@
             }
         }
 
+        // message
+        public function messenger($name,$email,$msg){
+            $this->sql = "INSERT INTO `messages`(`messenger_name`, `messenger_email`, `messenger_message`) VALUES ('$name','$email','$msg')";
+
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return true;
+            }else{
+                return false;
+            }
+
+        }
+
 
 
         // close connection
