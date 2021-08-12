@@ -94,7 +94,7 @@
 
                             <!-- manage post -->
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts2" aria-expanded="false" aria-controls="collapseLayouts2">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-blog"></i></div>
                                 Manage Post
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
@@ -107,7 +107,7 @@
 
                              <!-- manage gallery -->
                              <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts3" aria-expanded="false" aria-controls="collapseLayouts3">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-images"></i></div>
                                 Manage Gallery
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
@@ -117,6 +117,19 @@
                                     <a class="nav-link <?php if($sub_page == 'add_image'){echo 'active';} ?>" href="add_image.php">Add Image</a>
                                 </nav>
                             </div>
+
+                             <!-- manage contact message -->
+                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts4" aria-expanded="false" aria-controls="collapseLayouts4">
+                                <div class="sb-nav-link-icon"><i class="fas fa-envelope"></i></div>
+                                Manage Message
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse <?php if($page == 'message'){echo 'show';} ?>" id="collapseLayouts4" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link <?php if($sub_page == 'view_message'){echo 'active';} ?>" href="view_message.php">View Message</a>
+                                </nav>
+                            </div>
+
         
                         </div>
                     </div>

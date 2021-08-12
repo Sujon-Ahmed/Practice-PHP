@@ -22,19 +22,19 @@
 			<div class="footer_section_mnu">
 				<ul class="footer_section_ul">
 					<li>
-						<a href="home.html">Home</a>
+						<a href="index.php">Home</a>
 					</li>
 					<li>
-						<a href="gallery.html">Gallery</a>
+						<a href="gallery.php">Gallery</a>
 					</li>
 					<li>
 						<a href="faq.html">FAQ</a>
 					</li>
 					<li>
-						<a href="about_us.html">About</a>
+						<a href="about_us.php">About</a>
 					</li>
 					<li>
-						<a href="contact.html">Contact</a>
+						<a href="contact.php">Contact</a>
 					</li>
 				</ul>
 			</div>

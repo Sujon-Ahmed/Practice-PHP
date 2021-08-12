@@ -351,6 +351,40 @@
 
         }
 
+        // get message
+        public function get_message(){
+            $this->sql = "SELECT * FROM messages ORDER BY messenger_id DESC";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return $this->result;
+            }else{
+                return false;
+            }
+        }
+
+        // get single message
+        public function get_single_message($message_id){
+            $this->sql = "SELECT * FROM messages WHERE messenger_id = '$message_id'";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return $this->result;
+            }else{
+                return false;
+            }
+        }
+
+        // delete message
+        public function delete_message($message_id)
+        {
+            $this->sql = "DELETE FROM `messages` WHERE messenger_id = '$message_id'";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return $this->result;
+            }else{
+                return false;
+            }
+        }
+
 
 
         // close connection
