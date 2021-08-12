@@ -14,7 +14,7 @@
             $status = $obj->messenger($name,$email,$msg);
 
             if($status == true){
-                Flash_data::success("Successful");
+                Flash_data::success("Message Record Successfully");
                 header('location:contact.php');
             }
         }
