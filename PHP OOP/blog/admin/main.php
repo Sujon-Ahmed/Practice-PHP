@@ -229,9 +229,56 @@
             }
         }
 
+
+
         // total_data
         public function total_data(){
             $this->sql = "SELECT * FROM post";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return $this->result->num_rows;
+            }else{
+                return false;
+            }
+        }
+
+         //    total post data
+        public function total_post_data($id){
+            $this->sql = "SELECT * FROM post WHERE author_id = '$id'";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return $this->result->num_rows;
+            }else{
+                return false;
+            }
+        }
+
+        
+         //    total post data
+         public function total_image_data($id){
+            $this->sql = "SELECT * FROM gallery WHERE auth_id = '$id'";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return $this->result->num_rows;
+            }else{
+                return false;
+            }
+        }
+
+        //    total message data
+        public function total_message_data(){
+            $this->sql = "SELECT * FROM messages";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return $this->result->num_rows;
+            }else{
+                return false;
+            }
+        }
+
+        //    total category data
+        public function total_category_data(){
+            $this->sql = "SELECT * FROM category";
             $this->result = $this->con->query($this->sql);
             if($this->result == true){
                 return $this->result->num_rows;
