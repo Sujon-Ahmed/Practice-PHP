@@ -242,7 +242,7 @@
             }
         }
 
-         //    total post data
+         //    total post count data
         public function total_post_data($id){
             $this->sql = "SELECT * FROM post WHERE author_id = '$id'";
             $this->result = $this->con->query($this->sql);
@@ -254,7 +254,7 @@
         }
 
         
-         //    total post data
+         //    total image count data
          public function total_image_data($id){
             $this->sql = "SELECT * FROM gallery WHERE auth_id = '$id'";
             $this->result = $this->con->query($this->sql);
@@ -265,7 +265,7 @@
             }
         }
 
-        //    total message data
+        //    total message count data
         public function total_message_data(){
             $this->sql = "SELECT * FROM messages";
             $this->result = $this->con->query($this->sql);
@@ -276,7 +276,7 @@
             }
         }
 
-        //    total category data
+        //    total category count data
         public function total_category_data(){
             $this->sql = "SELECT * FROM category";
             $this->result = $this->con->query($this->sql);
