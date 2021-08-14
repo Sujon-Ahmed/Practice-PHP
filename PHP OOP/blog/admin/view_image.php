@@ -70,14 +70,14 @@
                                                
                                                     <td class="m-auto text-center">
                                                         <a href="<?php echo 'uploads/gallery/'.$gallery_img->gal_image; ?>" target="_blank">
-                                                        <img class="img-fluid" src="<?php echo 'uploads/gallery/'.$gallery_img->gal_image; ?>" width="150" height="150" alt="">
+                                                        <img class="img-fluid" src="<?php echo 'uploads/gallery/'.$gallery_img->gal_image; ?>" width="200" height="200" alt="">
                                                         </a>
                                                     </td>
                                                     <td><?php echo date('M-d-Y h:i A',strtotime($gallery_img->img_created_at)); ?></td>
                                                     <td>
-                                                        <a href="img_details.php?id=<?php echo $gallery_img->img_id; ?>" title="Image Details" class="btn btn-success btn-sm"><i class="fas fa-eye text-light"></i></a>
+                                                        <a href="img_details.php?id=<?php echo $gallery_img->img_id; ?>" title="Image Details" class="btn btn-success btn-sm">View</a>
 
-                                                        <a href="img_delete.php?id=<?php echo $gallery_img->img_id; ?>" title="Image Delete" onclick="javascript:return confirm('Delete This Image?')" class="btn btn-danger btn-sm"><i class="fas fa-trash text-light"></i></a>
+                                                        <a href="img_delete.php?id=<?php echo $gallery_img->img_id; ?>" title="Image Delete" onclick="javascript:return confirm('Delete This Image?')" class="btn btn-danger btn-sm">Delete</a>
                                                         
                                                     </td>
                                                 </tr> 
