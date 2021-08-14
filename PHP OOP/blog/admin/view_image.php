@@ -75,9 +75,9 @@
                                                     </td>
                                                     <td><?php echo date('M-d-Y h:i A',strtotime($gallery_img->img_created_at)); ?></td>
                                                     <td>
-                                                        <a href="img_details.php?id=<?php echo $gallery_img->img_id; ?>" title="Image Details" class="btn btn-success btn-sm">show</a>
+                                                        <a href="img_details.php?id=<?php echo $gallery_img->img_id; ?>" title="Image Details" class="btn btn-success btn-sm">View</a>
 
-                                                        <a href="img_delete.php?id=<?php echo $gallery_img->img_id; ?>" title="Image Delete" onclick="javascript:return confirm('Delete This Image?')" class="btn btn-danger btn-sm">delete</a>
+                                                        <a href="img_delete.php?id=<?php echo $gallery_img->img_id; ?>" title="Image Delete" onclick="javascript:return confirm('Delete This Image?')" class="btn btn-danger btn-sm">Delete</a>
                                                         
                                                     </td>
                                                 </tr> 
