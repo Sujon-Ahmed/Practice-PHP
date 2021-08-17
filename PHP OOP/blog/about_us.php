@@ -120,36 +120,40 @@
 								while($all_users = $all_user->fetch_object()){
 									?>
 										<div class="d-flex">
-											<div class="about_us_sec">
-												<?php
-													if(!empty($all_users->user_photo)){
-														?>
-															<img class="img-fluid img-thumbnail" src="<?php echo 'admin/uploads/'.$all_users->user_photo; ?>" style="width: 150px; height:150px; margin:10px" alt="">
-														<?php
-													}else{
-														?>
-															<img class="img-fluid img-thumbnail" src="<?php echo 'admin/img/profile.jpg'; ?>" style="width: 150px; height:150px; margin:10px" alt="">
-														<?php
-													}
-												?>
-												
-											</div>
-											<div class="about_us_sec">
-												<h2 class="about_us_sec_h2"></h2>
-												<h4 class="about_us_sec_h4"><?php echo $all_users->user_name; ?></h4>
-												<p class="about_us_sec_text">
-													<?php 
-														if(!empty($all_users->user_about)){
+											<div class="col-md-3">
+												<div class="about_us_sec">
+													<?php
+														if(!empty($all_users->user_photo)){
 															?>
-																<P><?php echo $all_users->user_about; ?></P>
+																<img class="img-fluid img-thumbnail" src="<?php echo 'admin/uploads/'.$all_users->user_photo; ?>" style="width: 150px; height:150px; margin:10px" alt="">
 															<?php
 														}else{
 															?>
-																<p>This user has nothing to say about himself</p>
+																<img class="img-fluid img-thumbnail" src="<?php echo 'admin/img/profile.jpg'; ?>" style="width: 150px; height:150px; margin:10px" alt="">
 															<?php
 														}
-												 	?>
-												 </p>
+													?>
+													
+												</div>
+											</div>
+											<div class="col-md-9">
+												<div class="about_us_sec">
+													<h2 class="about_us_sec_h2"></h2>
+													<h4 class="about_us_sec_h4"><?php echo $all_users->user_name; ?></h4>
+													<p class="about_us_sec_text">
+														<?php 
+															if(!empty($all_users->user_about)){
+																?>
+																	<P><?php echo $all_users->user_about; ?></P>
+																<?php
+															}else{
+																?>
+																	<p>This user has nothing to say about himself</p>
+																<?php
+															}
+														?>
+													</p>
+												</div>
 											</div>
 										</div>
 									<?php
