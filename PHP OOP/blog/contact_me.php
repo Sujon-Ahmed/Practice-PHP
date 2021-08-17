@@ -1,26 +1,38 @@
-<!DOCTYPE HTML>
+<?php
+session_start();
+	include 'admin/main.php';
+	$obj = new Main();
+
+	if(isset($_SESSION['id'])){
+		header('location:admin/index.php');
+	}else{
+		header('location:admin/login.php');
+	}
+?>
+
+<!-- <!DOCTYPE HTML>
 <html lang="zxx">
 	<head>
-		<meta charset="UTF-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Blog</title>
+		<meta charset="UTF-8"> -->
+	    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		<!-- <title>Blog</title> -->
 		<!-- FONT AWESOME -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+		<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> -->
 		<!-- BOOTSTRAP GRID CSS -->
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+		<!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css" /> -->
+		<!-- <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css"> -->
 		<!-- COMMON CSS -->
-		<link rel="stylesheet" href="assets/css/common.css" />
+		<!-- <link rel="stylesheet" href="assets/css/common.css" /> -->
 		<!-- STYLE CSS -->
-		<link rel="stylesheet" href="assets/css/main.css" />	
+		<!-- <link rel="stylesheet" href="assets/css/main.css" />	 -->
 		  <!-- RESPONSIVE CSS -->
-		<link rel="stylesheet" href="assets/css/responsive.css" />	
+		<!-- <link rel="stylesheet" href="assets/css/responsive.css" />	
 
 	</head>
 
-	<body>
+	<body> -->
 		<!-- HEADER -->
-		<div style="position: relative;">
+		<!-- <div style="position: relative;">
 			<div class="header">
 				<div class="menu_all" id="myHeader">
 					<div class="container">
@@ -39,47 +51,47 @@
 									<div class="menu_right_list">
 										<ul class="menu_right_ul d-flex">
 											<li class="dis_fx_cntr">
-												<a href="home.html">HOME</a>
+												<a href="index.php">HOME</a>
 											</li>
 											<li>
-												<a href="gallery.html">gallery</a>
+												<a href="gallery.php">gallery</a>
 											</li>
 											<li>
-												<a href="about_us.html">about</a>
+												<a href="about_us.php">about</a>
 											</li>
 											
 											<li>
-												<a href="contact.html">CONTACT</a>
+												<a href="contact.php">CONTACT</a>
 											</li>
 											<li>
-												<a href="contact_me.html">author</a>
+												<a href="contact_me.php">author</a>
 											</li>
 										</ul>
 									</div>
 									<div class="menu_srch d-flex">
-										<i class="fas fa-search search_btn"></i>
+										<i class="fas fa-search search_btn"></i> -->
 										<!-- SEARCH INPUT -->
-										<div class="header_serch dis_none">
+										<!-- <div class="header_serch dis_none">
 											<div class="header_serch_input">
 												<input type="" name="" placeholder="Search">
 											</div>
 											<div class="header_serch_i">
 												<i class="fas fa-search"></i>
 											</div>
-										</div>
+										</div> -->
 										<!-- SEARCH INPUT -->
-									</div>
+									<!-- </div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- HEADER -->
 
 		<!-- BANNER -->
-		<div class="blog_banner">
+		<!-- <div class="blog_banner">
 			<div class="container">
 				<div class="blog_banner_info">
 					<div class="blog_banner_info_title pad_b20">
@@ -101,11 +113,11 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- BANNER -->
 
 		<!-- BODY -->
-		<div class="author_page">
+		<!-- <div class="author_page">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-12 col-md-10 col-lg-10">
@@ -231,12 +243,12 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- BODY -->
 
 	
 		<!-- FOOTER -->
-		<div class="footer_section">
+		<!-- <div class="footer_section">
 			<div class="footer_section_social">
 				<ul class="footer_section_social_ul">
 					   <li>
@@ -286,4 +298,4 @@
 	
     
 	</body>
-</html>
+</html> -->

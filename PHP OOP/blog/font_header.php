@@ -57,14 +57,14 @@
 												<a href="gallery.php">gallery</a>
 											</li>
 											<li>
-												<a href="about_us.html">about</a>
+												<a href="about_us.php">about</a>
 											</li>
 											
 											<li>
 												<a href="contact.php">CONTACT</a>
 											</li>
 											<li>
-												<a href="contact_me.html">author</a>
+												<a href="contact_me.php">Admin</a>
 											</li>
 										</ul>
 									</div>

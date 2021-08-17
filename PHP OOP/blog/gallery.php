@@ -68,7 +68,7 @@
 												<a href="contact.php">CONTACT</a>
 											</li>
 											<li>
-												<a href="contact_me.php">author</a>
+												<a href="contact_me.php">Admin</a>
 											</li>
 										</ul>
 									</div>
