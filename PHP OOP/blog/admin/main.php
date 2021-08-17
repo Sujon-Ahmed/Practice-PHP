@@ -432,6 +432,17 @@
             }
         }
 
+        // about for user
+        public function all_users(){
+            $this->sql = "SELECT * FROM `user`";
+            $this->result = $this->con->query($this->sql);
+            if($this->result == true){
+                return $this->result;
+            }else{
+                return false;
+            }
+        }
+
 
 
         // close connection
