@@ -102,15 +102,12 @@
 											<li><i class="far fa-comments"></i>10 Comment</li>
 											<li><i class="far fa-share-square"></i>4 Share</li>
 										</ul>
+										<div class="mt-5">
+										<div class="fb-comments" data-href="https://developers.facebook.com/localhost/practice-php/PHP%20OOP/blog/blog_post.php?id=<?php echo $_GET['id']; ?>" data-width="100%" data-numposts="5"></div>
+										</div>
 									</div>	
 								</div>	
 							</div>
-							
-							<div class="post_dtls_cmnt_sec mar_t20">
-								<h2 class="post_dtls_title2 pad_b20">Comments</h2>
-								<div class="fb-comments" data-href="http://localhost/practice-php/PHP%20OOP/blog/blog_post.php?id=<?php echo $_GET['id'];?>" data-width="" data-numposts="5"></div>
-							</div>
-
 						
 						</div>
 					</div>
